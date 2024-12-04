@@ -48,14 +48,14 @@ option(OGRE_USE_NEW_PROJECT_NAME
 	TRUE)
 
 if( OGRE_USE_NEW_PROJECT_NAME )
-	set( OGRE_NEXT "OgreNext" )
-	set( OGRE_NEXT_PREFIX "OGRE-Next")
+	set( OGRE_NEXT "FinalNext" )
+	set( OGRE_NEXT_PREFIX "Final-Next")
 else()
-	set( OGRE_NEXT "Ogre" )
-	set( OGRE_NEXT_PREFIX "OGRE" )
+	set( OGRE_NEXT "Final" )
+	set( OGRE_NEXT_PREFIX "FINAL" )
 endif()
 
-project(OGRE-Next)
+project(Final-Next)
 # capture ogre location, and at the same time hide legacy cache variables
 set(OGRE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(OGRE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
@@ -133,8 +133,8 @@ if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANGXX)
   if (OGRE_GCC_HAS_SSE)
     if(CMAKE_GENERATOR STREQUAL "Xcode")
       # XCode builds universal binaries, and generates too much warnings when -msse and -msse2 are passed to arm compiler
-      set(CMAKE_XCODE_ATTRIBUTE_ARCH_CXXFLAGS[arch=i386] "-msse -msse2")
-      set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} $(ARCH_CXXFLAGS)")
+      # set(CMAKE_XCODE_ATTRIBUTE_ARCH_CXXFLAGS[arch=i386] "-msse -msse2")
+      # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} $(ARCH_CXXFLAGS)")
     else()
       set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -msse -msse2")
     endif ()
@@ -523,6 +523,8 @@ cmake_dependent_option(OGRE_BUILD_LIBS_AS_FRAMEWORKS "Build frameworks for libra
 
 option(OGRE_BUILD_SAMPLES2 "Build Ogre new demos (2.1)" TRUE)
 cmake_dependent_option(OGRE_BUILD_SAMPLES_AS_BUNDLES "Build samples as application bundles on OS X." TRUE "APPLE;OGRE_BUILD_SAMPLES2" FALSE)
+option(OGRE_BUILD_WORLDS "Build Finalverse Worlds" TRUE)
+cmake_dependent_option(OGRE_BUILD_WORLDS_AS_BUNDLES "Build worlds as application bundles on OS X." TRUE "APPLE;OGRE_BUILD_WORLDS" FALSE)
 cmake_dependent_option(OGRE_BUILD_TOOLS "Build the command-line tools" TRUE "NOT OGRE_BUILD_PLATFORM_APPLE_IOS;NOT WINDOWS_STORE;NOT OGRE_BUILD_PLATFORM_WINDOWS_PHONE" FALSE)
 cmake_dependent_option(OGRE_BUILD_XSIEXPORTER "Build the Softimage exporter" FALSE "Softimage_FOUND" FALSE)
 option(OGRE_BUILD_TESTS "Build the unit tests & PlayPen" FALSE)
@@ -595,9 +597,11 @@ cmake_dependent_option( OGRE_BUILD_COMPONENT_SCENE_FORMAT "Component to export a
 
 # Customise what to install
 option(OGRE_INSTALL_SAMPLES "Install Ogre demos." TRUE)
+option(OGRE_INSTALL_WORLDS "Install Final Worlds." TRUE)
 option(OGRE_INSTALL_TOOLS "Install Ogre tools." TRUE)
 option(OGRE_INSTALL_DOCS "Install documentation." TRUE)
 option(OGRE_INSTALL_SAMPLES_SOURCE "Install samples source files." FALSE)
+option(OGRE_INSTALL_WORLDS_SOURCE "Install world source files." FALSE)
 cmake_dependent_option(OGRE_INSTALL_PDB "Install debug pdb files" TRUE "MSVC" FALSE)
 cmake_dependent_option(OGRE_FULL_RPATH "Build executables with the full required RPATH to run from their install location." FALSE "NOT WIN32" FALSE)
 option(OGRE_SIMD_SSE2 "Enable SIMD (Include SSE2 files)." TRUE)
@@ -682,6 +686,7 @@ mark_as_advanced(
   OGRE_CONFIG_ENABLE_FINE_LIGHT_MASK_GRANULARITY
   OGRE_CONFIG_ENABLE_LIGHT_OBB_RESTRAINT
   OGRE_INSTALL_SAMPLES_SOURCE
+  OGRE_INSTALL_WORLDS_SOURCE
   OGRE_FULL_RPATH
   OGRE_PLUGIN_LIB_PREFIX
   OGRE_PROFILING_PROVIDER
@@ -731,6 +736,9 @@ endif ()
 # Setup samples
 add_subdirectory(Samples)
 
+# Setup worlds
+add_subdirectory(Worlds)
+
 # Add android JNI binding
 if(ANDROID AND OGRE_BUILD_ANDROID_JNI_SAMPLE)
   include(toolchain/AndroidJNI)
@@ -752,6 +760,10 @@ add_subdirectory(Docs)
 # Install media files
 if (OGRE_INSTALL_SAMPLES OR OGRE_INSTALL_SAMPLES_SOURCE)
   add_subdirectory(Samples/Media)
+endif ()
+
+if (OGRE_INSTALL_WORLDS OR OGRE_INSTALL_WORLDS_SOURCE)
+  add_subdirectory(Worlds/Media)
 endif ()
 
 # Install CMake modules
