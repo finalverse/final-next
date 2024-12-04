@@ -21,15 +21,15 @@ add_recursive( ./ SOURCE_FILES )
 set( POSTPROCESSING_RESOURCES ${WORLD_COMMON_RESOURCES} )
 if( APPLE )
 	set( POSTPROCESSING_RESOURCES ${POSTPROCESSING_RESOURCES}
-		 ${CMAKE_SOURCE_DIR}/Samples/Media/packs/cubemapsJS.zip )
+		 ${CMAKE_SOURCE_DIR}/Worlds/Media/packs/cubemapsJS.zip )
 endif()
 
-ogre_add_executable(Sample_Postprocessing WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${POSTPROCESSING_RESOURCES})
+ogre_add_executable(World_Postprocessing WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${POSTPROCESSING_RESOURCES})
 
-target_link_libraries(Sample_Postprocessing ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
-ogre_config_world_lib(Sample_Postprocessing)
+target_link_libraries(World_Postprocessing ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
+ogre_config_world_lib(World_Postprocessing)
 
 if( APPLE )
-	set_target_properties( Sample_Postprocessing PROPERTIES RESOURCE "${POSTPROCESSING_RESOURCES}" )
-	set_target_properties( Sample_Postprocessing PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${WORLDS_PLIST} )
+	set_target_properties( World_Postprocessing PROPERTIES RESOURCE "${POSTPROCESSING_RESOURCES}" )
+	set_target_properties( World_Postprocessing PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${WORLDS_PLIST} )
 endif()

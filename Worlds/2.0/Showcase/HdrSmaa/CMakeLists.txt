@@ -21,11 +21,11 @@ ogre_add_component_include_dir(Hlms/Pbs)
 
 add_recursive( ./ SOURCE_FILES )
 
-ogre_add_executable(Sample_HdrSmaa WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${WORLD_COMMON_RESOURCES})
+ogre_add_executable(World_HdrSmaa WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${WORLD_COMMON_RESOURCES})
 
-target_link_libraries(Sample_HdrSmaa ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
+target_link_libraries(World_HdrSmaa ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
 if( OGRE_BUILD_COMPONENT_ATMOSPHERE )
-	target_link_libraries(Sample_HdrSmaa ${OGRE_NEXT}Atmosphere)
+	target_link_libraries(World_HdrSmaa ${OGRE_NEXT}Atmosphere)
 endif()
-ogre_config_world_lib(Sample_HdrSmaa)
-ogre_config_world_pkg(Sample_HdrSmaa)
+ogre_config_world_lib(World_HdrSmaa)
+ogre_config_world_pkg(World_HdrSmaa)

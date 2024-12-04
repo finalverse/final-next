@@ -48,11 +48,11 @@ option(OGRE_USE_NEW_PROJECT_NAME
 	TRUE)
 
 if( OGRE_USE_NEW_PROJECT_NAME )
-	set( OGRE_NEXT "FinalNext" )
-	set( OGRE_NEXT_PREFIX "Final-Next")
+	set( OGRE_NEXT "OrgeNext" )
+	set( OGRE_NEXT_PREFIX "OGRE-Next")
 else()
-	set( OGRE_NEXT "Final" )
-	set( OGRE_NEXT_PREFIX "FINAL" )
+	set( OGRE_NEXT "Ogre" )
+	set( OGRE_NEXT_PREFIX "OGRE" )
 endif()
 
 project(Final-Next)

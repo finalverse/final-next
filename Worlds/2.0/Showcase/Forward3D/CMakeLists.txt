@@ -20,8 +20,8 @@ ogre_add_component_include_dir(Overlays)
 
 add_recursive( ./ SOURCE_FILES )
 
-ogre_add_executable(Sample_Forward3D WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${WORLD_COMMON_RESOURCES})
+ogre_add_executable(World_Forward3D WIN32 MACOSX_BUNDLE ${SOURCE_FILES} ${WORLD_COMMON_RESOURCES})
 
-target_link_libraries(Sample_Forward3D ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
-ogre_config_world_lib(Sample_Forward3D)
-ogre_config_world_pkg(Sample_Forward3D)
+target_link_libraries(World_Forward3D ${OGRE_LIBRARIES} ${OGRE_WORLDS_LIBRARIES})
+ogre_config_world_lib(World_Forward3D)
+ogre_config_world_pkg(World_Forward3D)
