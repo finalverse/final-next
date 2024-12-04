@@ -70,6 +70,7 @@ elseif (UNIX)
     set(OGRE_PLUGIN_PATH "/${OGRE_NEXT_PREFIX}")
   endif(APPLE)
   set(OGRE_SAMPLE_PATH "/${OGRE_NEXT_PREFIX}/Samples")
+  set(OGRE_WORLD_PATH "/${OGRE_NEXT_PREFIX}/Worlds")
 endif ()
 
 # create vcproj.user file for Visual Studio to set debug working directory
@@ -405,6 +406,106 @@ function(ogre_config_sample_lib SAMPLENAME)
 
 endfunction(ogre_config_sample_lib)
 
+# setup Final world build
+function(ogre_config_world_common WORLDENAME)
+    ogre_config_common(${WORLDNAME})
+
+    # set install RPATH for Unix systems
+    if (UNIX AND OGRE_FULL_RPATH)
+        set_property(TARGET ${WORLDNAME} APPEND PROPERTY
+                INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/${OGRE_LIB_DIRECTORY})
+        set_property(TARGET ${WORLDNAME} PROPERTY INSTALL_RPATH_USE_LINK_PATH TRUE)
+    endif ()
+
+    if (APPLE AND OGRE_BUILD_WORLDS_AS_BUNDLES)
+        # On OS X, create .app bundle
+        set_property(TARGET ${WORLDNAME} PROPERTY MACOSX_BUNDLE TRUE)
+        if (NOT OGRE_BUILD_PLATFORM_APPLE_IOS)
+            # Add the path where the Ogre framework was found
+            if(${OGRE_FRAMEWORK_PATH})
+                set_target_properties(${WORLDNAME} PROPERTIES
+                        COMPILE_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+                        LINK_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+                )
+            endif()
+        else()
+            set_xcode_property( ${WORLDNAME} IPHONEOS_DEPLOYMENT_TARGET ${MIN_IOS_VERSION} )
+            set_property( TARGET ${WORLDNAME} PROPERTY XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET[arch=arm64] "9.0" )
+        endif()
+    endif (APPLE AND OGRE_BUILD_WORLDS_AS_BUNDLES)
+    if (NOT OGRE_STATIC)
+        if (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+            # disable "lib" prefix on Unix
+            set_target_properties(${WORLDNAME} PROPERTIES PREFIX "")
+        endif (CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    endif()
+
+    if (NOT WIN32)
+        set_target_properties(${WORLDNAME} PROPERTIES VERSION ${OGRE_SOVERSION} SOVERSION ${OGRE_SOVERSION})
+    endif()
+
+    if (OGRE_INSTALL_WORLDS)
+        ogre_install_target(${WORLDNAME} ${OGRE_WORLD_PATH} FALSE)
+    endif()
+
+endfunction(ogre_config_world_common)
+
+function(ogre_config_world_exe WORLDNAME)
+    ogre_config_world_common(${WORLDNAME})
+    if (OGRE_INSTALL_PDB AND OGRE_INSTALL_WORLDS)
+        # install debug pdb files - no _d on exe
+        install(FILES ${OGRE_BINARY_DIR}/bin${OGRE_DEBUG_PATH}/${WORLDNAME}.pdb
+                DESTINATION bin${OGRE_DEBUG_PATH}
+                CONFIGURATIONS Debug
+        )
+        install(FILES ${OGRE_BINARY_DIR}/bin${OGRE_RELWDBG_PATH}/${WORLDNAME}.pdb
+                DESTINATION bin${OGRE_RELWDBG_PATH}
+                CONFIGURATIONS RelWithDebInfo
+        )
+    endif ()
+
+    if (APPLE AND NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND OGRE_SDK_BUILD)
+        # Add the path where the Ogre framework was found
+        if(NOT ${OGRE_FRAMEWORK_PATH} STREQUAL "")
+            set_target_properties(${WORLDNAME} PROPERTIES
+                    COMPILE_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+                    LINK_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+            )
+        endif()
+    endif(APPLE AND NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND OGRE_SDK_BUILD)
+endfunction(ogre_config_world_exe)
+
+function(ogre_config_world_lib WORLDNAME)
+    ogre_config_world_common(${WORLDNAME})
+    if (OGRE_INSTALL_PDB AND OGRE_INSTALL_WORLDS)
+        # install debug pdb files - with a _d on lib
+        install(FILES ${OGRE_BINARY_DIR}/bin${OGRE_DEBUG_PATH}/${WORLDNAME}.pdb
+                DESTINATION bin${OGRE_DEBUG_PATH}
+                CONFIGURATIONS Debug
+        )
+        install(FILES ${OGRE_BINARY_DIR}/bin${OGRE_RELWDBG_PATH}/${WORLDNAME}.pdb
+                DESTINATION bin${OGRE_RELWDBG_PATH}
+                CONFIGURATIONS RelWithDebInfo
+        )
+    endif ()
+
+    if (APPLE AND NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND OGRE_SDK_BUILD)
+        # Add the path where the Ogre framework was found
+        if(NOT ${OGRE_FRAMEWORK_PATH} STREQUAL "")
+            set_target_properties(${WORLDNAME} PROPERTIES
+                    COMPILE_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+                    LINK_FLAGS "-F${OGRE_FRAMEWORK_PATH}"
+            )
+        endif()
+    endif(APPLE AND NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND OGRE_SDK_BUILD)
+
+    # Add world to the list of link targets
+    # Global property so that we can build this up across entire world tree
+    # since vars are local to containing scope of directories / functions
+    get_property(OGRE_WORLDS_LIST GLOBAL PROPERTY "OGRE_WORLDS_LIST")
+    set_property (GLOBAL PROPERTY "OGRE_WORLDS_LIST" ${OGRE_WORLDS_LIST} ${WORLDNAME})
+
+endfunction(ogre_config_world_lib)
 
 # setup Ogre tool build
 function(ogre_config_tool TOOLNAME)
