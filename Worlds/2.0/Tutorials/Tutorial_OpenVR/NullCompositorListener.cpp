@@ -9,7 +9,7 @@
 
 #include "Compositor/OgreCompositorWorkspace.h"
 
-namespace Demo
+namespace Final
 {
     NullCompositorListener::NullCompositorListener( Ogre::TextureGpu *vrTexture, Ogre::Root *root,
                                                     Ogre::CompositorWorkspace *workspace,
@@ -98,4 +98,4 @@ namespace Demo
     void NullCompositorListener::passSceneAfterFrustumCulling( Ogre::CompositorPassScene *pass ) {}
     //-------------------------------------------------------------------------
     bool NullCompositorListener::canSyncCameraTransformImmediately() const { return true; }
-}  // namespace Demo
+}  // namespace Final

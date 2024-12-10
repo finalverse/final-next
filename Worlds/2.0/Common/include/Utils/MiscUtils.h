@@ -1,7 +1,7 @@
 
 #include "OgrePrerequisites.h"
 
-namespace Demo
+namespace Final
 {
     class MiscUtils
     {
@@ -34,4 +34,4 @@ namespace Demo
                                                 Ogre::uint8 kernelRadius, float gaussianDeviationFactor,
                                                 Ogre::uint16 K );
     };
-}  // namespace Demo
+}  // namespace Final

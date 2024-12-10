@@ -1,12 +1,12 @@
 
-#ifndef _Demo_Tutorial_OpenVR_H_
-#define _Demo_Tutorial_OpenVR_H_
+#ifndef _Final_Tutorial_OpenVR_H_
+#define _Final_Tutorial_OpenVR_H_
 
 #include "GraphicsSystem.h"
 
 #include "openvr.h"
 
-namespace Demo
+namespace Final
 {
     class NullCompositorListener;
     class OpenVRCompositorListener;
@@ -54,6 +54,6 @@ namespace Demo
 
         OpenVRCompositorListener *getOvrCompositorListener() { return mOvrCompositorListener; }
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -1,11 +1,11 @@
 
-#ifndef _Demo_Tutorial_OpenVRGameState_H_
-#define _Demo_Tutorial_OpenVRGameState_H_
+#ifndef _Final_Tutorial_OpenVRGameState_H_
+#define _Final_Tutorial_OpenVRGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Tutorial_OpenVRGameState : public TutorialGameState
     {
@@ -34,6 +34,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

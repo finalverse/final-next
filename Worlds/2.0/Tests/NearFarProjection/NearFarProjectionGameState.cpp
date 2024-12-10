@@ -12,9 +12,9 @@
 #include "OgreMeshManager2.h"
 #include "OgreSceneManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     NearFarProjectionGameState::NearFarProjectionGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -125,4 +125,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

@@ -46,7 +46,7 @@ THE SOFTWARE.
 
 #include "Threading/OgreThreads.h"
 
-using namespace Demo;
+using namespace Final;
 
 unsigned long renderThread( Ogre::ThreadHandle *threadHandle );
 unsigned long logicThread( Ogre::ThreadHandle *threadHandle );
@@ -61,10 +61,10 @@ struct ThreadData
 };
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-INT WINAPI Demo::MainEntryPoints::mainAppMultiThreaded( HINSTANCE hInst, HINSTANCE hPrevInstance,
+INT WINAPI Final::MainEntryPoints::mainAppMultiThreaded( HINSTANCE hInst, HINSTANCE hPrevInstance,
                                                         LPSTR strCmdLine, INT nCmdShow )
 #else
-int Demo::MainEntryPoints::mainAppMultiThreaded( int argc, const char *argv[] )
+int Final::MainEntryPoints::mainAppMultiThreaded( int argc, const char *argv[] )
 #endif
 {
     GameState *graphicsGameState = 0;

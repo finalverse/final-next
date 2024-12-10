@@ -30,7 +30,7 @@ THE SOFTWARE.
 
 #import <UIKit/UIScreen.h>
 
-namespace Demo
+namespace Final
 {
     Ogre::Vector2 iOSUtils::getScreenResolutionInPoints( void )
     {

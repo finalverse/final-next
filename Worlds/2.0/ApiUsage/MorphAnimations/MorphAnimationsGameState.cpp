@@ -20,9 +20,9 @@
 #include "OgreCamera.h"
 #include "OgreWindow.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     MorphAnimationsGameState::MorphAnimationsGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -202,4 +202,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

@@ -1,11 +1,11 @@
 
-#ifndef Demo_Hlms05CustomizationPerObjDataGameState_H
-#define Demo_Hlms05CustomizationPerObjDataGameState_H
+#ifndef Final_Hlms05CustomizationPerObjDataGameState_H
+#define Final_Hlms05CustomizationPerObjDataGameState_H
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms05CustomizationPerObjDataGameState : public TutorialGameState
     {
@@ -18,6 +18,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

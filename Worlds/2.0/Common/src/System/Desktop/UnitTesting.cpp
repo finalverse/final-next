@@ -64,7 +64,7 @@ THE SOFTWARE.
 
 #include <fstream>
 
-namespace Demo
+namespace Final
 {
     UnitTest::KeyStroke::KeyStroke() : keycode( 0 ), scancode( 0u ), bReleased( false ) {}
     UnitTest::FrameActivity::FrameActivity( uint32_t _frameId ) :
@@ -249,7 +249,7 @@ namespace Demo
         inputHandler->_overrideKeyboardListener( this );
     }
     //-------------------------------------------------------------------------
-    void UnitTest::notifyRecordingNewFrame( Demo::GraphicsSystem *graphicsSystem )
+    void UnitTest::notifyRecordingNewFrame( Final::GraphicsSystem *graphicsSystem )
     {
         Ogre::Camera *camera = graphicsSystem->getCamera();
 
@@ -562,7 +562,7 @@ namespace Demo
         try
         {
             graphicsSystem->setAlwaysAskForConfig( false );
-            graphicsSystem->initialize( Demo::MainEntryPoints::getWindowTitle() );
+            graphicsSystem->initialize( Final::MainEntryPoints::getWindowTitle() );
             if( logicSystem )
                 logicSystem->initialize();
 
@@ -751,4 +751,4 @@ namespace Demo
 
         return 0;
     }
-}  // namespace Demo
+}  // namespace Final

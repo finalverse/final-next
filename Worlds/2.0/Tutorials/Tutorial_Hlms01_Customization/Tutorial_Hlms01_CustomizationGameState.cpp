@@ -20,7 +20,7 @@
 #include "OgreTextureGpuManager.h"
 #include "OgreWindow.h"
 
-using namespace Demo;
+using namespace Final;
 
 Hlms01CustomizationGameState::Hlms01CustomizationGameState( const Ogre::String &helpDescription ) :
     TutorialGameState( helpDescription )

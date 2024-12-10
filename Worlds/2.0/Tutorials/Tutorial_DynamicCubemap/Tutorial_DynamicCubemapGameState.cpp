@@ -28,9 +28,9 @@
 
 #include "Compositor/Pass/PassIblSpecular/OgreCompositorPassIblSpecularDef.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     DynamicCubemapGameState::DynamicCubemapGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -448,4 +448,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

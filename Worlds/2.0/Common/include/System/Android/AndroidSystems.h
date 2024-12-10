@@ -26,8 +26,8 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
 
-#ifndef _Demo_AndroidSystems_H_
-#define _Demo_AndroidSystems_H_
+#ifndef _Final_AndroidSystems_H_
+#define _Final_AndroidSystems_H_
 
 #include "OgrePrerequisites.h"
 
@@ -39,7 +39,7 @@ namespace Ogre
     class AndroidJniProvider;
 }
 
-namespace Demo
+namespace Final
 {
     /// Utility class to load plugins statically
     class AndroidSystems
@@ -95,6 +95,6 @@ namespace Demo
 
         static void registerArchiveFactories();
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

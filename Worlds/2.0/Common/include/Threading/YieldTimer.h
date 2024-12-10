@@ -1,10 +1,10 @@
 
-#ifndef _Demo_YieldTimer_H_
-#define _Demo_YieldTimer_H_
+#ifndef _Final_YieldTimer_H_
+#define _Final_YieldTimer_H_
 
 #include "OgreTimer.h"
 
-namespace Demo
+namespace Final
 {
     class YieldTimer
     {
@@ -31,6 +31,6 @@ namespace Demo
             return endTime;
         }
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

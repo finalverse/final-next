@@ -1,6 +1,6 @@
 
-#ifndef _Demo_InputListeners_H_
-#define _Demo_InputListeners_H_
+#ifndef _Final_InputListeners_H_
+#define _Final_InputListeners_H_
 
 union SDL_Event;
 struct SDL_MouseButtonEvent;
@@ -13,7 +13,7 @@ struct SDL_JoyButtonEvent;
 struct SDL_JoyAxisEvent;
 struct SDL_JoyHatEvent;
 
-namespace Demo
+namespace Final
 {
     class MouseListener
     {
@@ -41,6 +41,6 @@ namespace Demo
         virtual void joyAxisMoved( const SDL_JoyAxisEvent &arg, int axis ) {}
         virtual void joyPovMoved( const SDL_JoyHatEvent &arg, int index ) {}
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

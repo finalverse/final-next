@@ -1,6 +1,6 @@
 
-#ifndef _Demo_IesProfilesGameState_H_
-#define _Demo_IesProfilesGameState_H_
+#ifndef _Final_IesProfilesGameState_H_
+#define _Final_IesProfilesGameState_H_
 
 #include "OgrePrerequisites.h"
 
@@ -14,7 +14,7 @@ namespace Ogre
     class LightProfiles;
 }
 
-namespace Demo
+namespace Final
 {
     static const Ogre::uint32 c_numAreaLights = 4u;
 
@@ -30,6 +30,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

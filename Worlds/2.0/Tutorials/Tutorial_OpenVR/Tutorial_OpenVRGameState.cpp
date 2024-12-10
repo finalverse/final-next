@@ -25,11 +25,11 @@
 #include "OpenVRCompositorListener.h"
 #include "Tutorial_OpenVR.h"
 
-using namespace Demo;
+using namespace Final;
 
 extern const bool c_useRDM;
 
-namespace Demo
+namespace Final
 {
     Tutorial_OpenVRGameState::Tutorial_OpenVRGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -396,4 +396,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

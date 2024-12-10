@@ -24,7 +24,7 @@
 
 #include "LightProfiles/OgreLightProfiles.h"
 
-namespace Demo
+namespace Final
 {
     IesProfilesGameState::IesProfilesGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -137,4 +137,4 @@ namespace Demo
     {
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

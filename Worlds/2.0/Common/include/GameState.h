@@ -1,10 +1,10 @@
 
-#ifndef _Demo_GameState_H_
-#define _Demo_GameState_H_
+#ifndef _Final_GameState_H_
+#define _Final_GameState_H_
 
 #include "InputListeners.h"
 
-namespace Demo
+namespace Final
 {
     class GameState : public MouseListener, public KeyboardListener, public JoystickListener
     {
@@ -23,6 +23,6 @@ namespace Demo
         virtual void finishFrameParallel() {}
         virtual void finishFrame() {}
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

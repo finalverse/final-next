@@ -1,6 +1,6 @@
 
-#ifndef Demo_HdrGameState_H_
-#define Demo_HdrGameState_H_
+#ifndef Final_HdrGameState_H_
+#define Final_HdrGameState_H_
 
 #include "OgrePrerequisites.h"
 
@@ -10,7 +10,7 @@
 
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class HdrGameState : public TutorialGameState
     {
@@ -44,6 +44,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

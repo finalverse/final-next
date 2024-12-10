@@ -12,7 +12,7 @@
 // Declares WinMain / main
 #include "MainEntryPointHelper.h"
 
-using namespace Demo;
+using namespace Final;
 
 extern const double cFrametime;
 const double cFrametime = 1.0 / 25.0;

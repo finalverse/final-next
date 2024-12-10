@@ -16,9 +16,9 @@
 
 #include "OgreCamera.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     ImportAnimationsShareSkeletonInstanceGameState::ImportAnimationsShareSkeletonInstanceGameState(
         const Ogre::String &helpDescription ) :
@@ -113,4 +113,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

@@ -1,6 +1,6 @@
 
-#ifndef Demo_Tutorial_Hlms04_AlwaysOnTopB_H
-#define Demo_Tutorial_Hlms04_AlwaysOnTopB_H
+#ifndef Final_Tutorial_Hlms04_AlwaysOnTopB_H
+#define Final_Tutorial_Hlms04_AlwaysOnTopB_H
 
 #include "GraphicsSystem.h"
 
@@ -18,7 +18,7 @@
 #include "OgreHlmsManager.h"
 #include "OgreHlmsPbs.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms04AlwaysOnTopBGraphicsSystem final : public GraphicsSystem
     {
@@ -146,6 +146,6 @@ namespace Demo
     public:
         Hlms04AlwaysOnTopBGraphicsSystem( GameState *gameState ) : GraphicsSystem( gameState ) {}
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

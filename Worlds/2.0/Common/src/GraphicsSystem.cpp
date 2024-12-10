@@ -60,7 +60,7 @@
 #    endif
 #endif
 
-namespace Demo
+namespace Final
 {
     GraphicsSystem::GraphicsSystem( GameState *gameState, Ogre::String resourcePath,
                                     Ogre::ColourValue backgroundColour ) :
@@ -911,7 +911,7 @@ namespace Demo
     {
         Ogre::CompositorManager2 *compositorManager = mRoot->getCompositorManager2();
 
-        const Ogre::String workspaceName( "Demo Workspace" );
+        const Ogre::String workspaceName( "Final Workspace" );
         if( !compositorManager->hasWorkspaceDefinition( workspaceName ) )
         {
             compositorManager->createBasicWorkspaceDef( workspaceName, mBackgroundColour,
@@ -1109,4 +1109,4 @@ namespace Demo
             ++itor;
         }
     }
-}  // namespace Demo
+}  // namespace Final

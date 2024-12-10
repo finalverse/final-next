@@ -27,9 +27,9 @@
 #include "Cubemaps/OgreParallaxCorrectedCubemapAuto.h"
 #include "Cubemaps/OgrePccPerPixelGridPlacement.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     PccPerPixelGridPlacementGameState::PccPerPixelGridPlacementGameState(
         const Ogre::String &helpDescription ) :
@@ -218,4 +218,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

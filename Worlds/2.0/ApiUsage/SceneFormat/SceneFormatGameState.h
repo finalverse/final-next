@@ -1,6 +1,6 @@
 
-#ifndef _Demo_SceneFormatGameState_H_
-#define _Demo_SceneFormatGameState_H_
+#ifndef _Final_SceneFormatGameState_H_
+#define _Final_SceneFormatGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -12,7 +12,7 @@ namespace Ogre
     class ParallaxCorrectedCubemap;
 }  // namespace Ogre
 
-namespace Demo
+namespace Final
 {
     class SceneFormatGameState : public TutorialGameState
     {
@@ -42,6 +42,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

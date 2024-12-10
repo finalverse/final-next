@@ -1,12 +1,12 @@
 
-#ifndef Demo_InternalCoreGameState_H
-#define Demo_InternalCoreGameState_H
+#ifndef Final_InternalCoreGameState_H
+#define Final_InternalCoreGameState_H
 
 #include "OgrePrerequisites.h"
 
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class InternalCoreGameState : public TutorialGameState
     {
@@ -15,6 +15,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

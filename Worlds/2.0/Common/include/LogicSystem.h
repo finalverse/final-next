@@ -1,13 +1,13 @@
 
-#ifndef _Demo_LogicSystem_H_
-#define _Demo_LogicSystem_H_
+#ifndef _Final_LogicSystem_H_
+#define _Final_LogicSystem_H_
 
 #include "BaseSystem.h"
 #include "OgrePrerequisites.h"
 
 #include <deque>
 
-namespace Demo
+namespace Final
 {
     class GameEntityManager;
 
@@ -35,6 +35,6 @@ namespace Demo
         GameEntityManager *getGameEntityManager() { return mGameEntityManager; }
         Ogre::uint32       getCurrentTransformIdx() const { return mCurrentTransformIdx; }
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

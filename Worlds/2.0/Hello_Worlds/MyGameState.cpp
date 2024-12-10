@@ -7,9 +7,9 @@
 
 #include "OgreTextAreaOverlayElement.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     MyGameState::MyGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -45,4 +45,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

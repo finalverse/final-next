@@ -1,11 +1,11 @@
 
-#ifndef _Demo_DecalsGameState_H_
-#define _Demo_DecalsGameState_H_
+#ifndef _Final_DecalsGameState_H_
+#define _Final_DecalsGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     struct DebugDecalVisual
     {
@@ -45,6 +45,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

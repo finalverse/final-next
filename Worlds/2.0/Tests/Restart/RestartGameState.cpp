@@ -24,9 +24,9 @@
 
 #include "System/MainEntryPoints.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     RestartGameState::RestartGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -237,4 +237,4 @@ namespace Demo
         }
         ++mFrameCount;
     }
-}  // namespace Demo
+}  // namespace Final

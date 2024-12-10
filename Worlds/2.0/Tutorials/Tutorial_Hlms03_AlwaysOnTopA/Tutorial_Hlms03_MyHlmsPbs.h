@@ -1,6 +1,6 @@
 
-#ifndef Demo_Hlms03MyHlmsPbs_H
-#define Demo_Hlms03MyHlmsPbs_H
+#ifndef Final_Hlms03MyHlmsPbs_H
+#define Final_Hlms03MyHlmsPbs_H
 
 #include "OgreHlmsPbs.h"
 

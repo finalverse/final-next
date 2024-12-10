@@ -19,11 +19,11 @@
 
 #include "OgreCamera.h"
 
-using namespace Demo;
+using namespace Final;
 
 #define USE_UMA_SHARED_BUFFERS 1
 
-namespace Demo
+namespace Final
 {
     // clang-format off
     const CubeVertices c_originalVertices[8] =
@@ -408,4 +408,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

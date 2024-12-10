@@ -1,6 +1,6 @@
 
-#ifndef _Demo_Tutorial_TextureBakingGameState_H_
-#define _Demo_Tutorial_TextureBakingGameState_H_
+#ifndef _Final_Tutorial_TextureBakingGameState_H_
+#define _Final_Tutorial_TextureBakingGameState_H_
 
 #include "OgreOverlayPrerequisites.h"
 #include "OgrePrerequisites.h"
@@ -8,7 +8,7 @@
 #include "OgreOverlay.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     static const Ogre::uint32 c_numAreaLights = 4u;
 
@@ -70,6 +70,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

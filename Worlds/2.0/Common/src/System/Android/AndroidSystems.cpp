@@ -37,7 +37,7 @@ THE SOFTWARE.
 #    include <android_native_app_glue.h>
 #endif
 
-namespace Demo
+namespace Final
 {
 #if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID
     static AndroidSystems g_andrSystem;
@@ -123,4 +123,4 @@ namespace Demo
     bool AndroidSystems::isAndroid() { return false; }
     void AndroidSystems::registerArchiveFactories() {}
 #endif
-}  // namespace Demo
+}  // namespace Final

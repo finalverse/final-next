@@ -7,13 +7,13 @@
 
 #include "OgreTextAreaOverlayElement.h"
 
-using namespace Demo;
+using namespace Final;
 
 extern const double cFrametime;
 extern bool gFakeSlowmo;
 extern bool gFakeFrameskip;
 
-namespace Demo
+namespace Final
 {
     GraphicsGameState::GraphicsGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -86,4 +86,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

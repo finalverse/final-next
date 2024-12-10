@@ -53,7 +53,7 @@ THE SOFTWARE.
 #endif
 #include "OgreRoot.h"
 
-namespace Demo
+namespace Final
 {
     StaticPluginLoader::StaticPluginLoader()
 #if defined( OGRE_STATIC_LIB )
@@ -168,4 +168,4 @@ namespace Demo
 #    endif
 #endif
     }
-}  // namespace Demo
+}  // namespace Final

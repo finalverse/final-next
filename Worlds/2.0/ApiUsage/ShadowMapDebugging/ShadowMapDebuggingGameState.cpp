@@ -33,9 +33,9 @@
 #include "OgreHlmsComputeJob.h"
 #include "Utils/MiscUtils.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     const Ogre::String c_shadowMapFilters[Ogre::HlmsPbs::NumShadowFilter] = {  //
         "PCF 2x2",                                                             //
@@ -477,4 +477,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

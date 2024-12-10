@@ -1,11 +1,11 @@
 
-#ifndef _Demo_V2ManualObjectGameState_H_
-#define _Demo_V2ManualObjectGameState_H_
+#ifndef _Final_V2ManualObjectGameState_H_
+#define _Final_V2ManualObjectGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class V2ManualObjectGameState : public TutorialGameState
     {
@@ -29,6 +29,6 @@ namespace Demo
 
         void fillBuffer( float uvOffset );
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

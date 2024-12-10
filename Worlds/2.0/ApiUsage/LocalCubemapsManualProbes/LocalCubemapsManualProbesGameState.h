@@ -1,6 +1,6 @@
 
-#ifndef _Demo_LocalCubemapsManualProbesGameState_H_
-#define _Demo_LocalCubemapsManualProbesGameState_H_
+#ifndef _Final_LocalCubemapsManualProbesGameState_H_
+#define _Final_LocalCubemapsManualProbesGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -13,7 +13,7 @@ namespace Ogre
     class HlmsPbsDatablock;
 }  // namespace Ogre
 
-namespace Demo
+namespace Final
 {
     class LocalCubemapsManualProbesGameState : public TutorialGameState
     {
@@ -41,6 +41,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

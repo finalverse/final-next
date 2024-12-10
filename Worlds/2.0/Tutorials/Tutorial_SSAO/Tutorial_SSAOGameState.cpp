@@ -35,9 +35,9 @@
 #include "Ogre.h"
 #include "OgreResourceGroupManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     Tutorial_SSAOGameState::Tutorial_SSAOGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -410,4 +410,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

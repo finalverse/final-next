@@ -1,11 +1,11 @@
 
-#ifndef _Demo_MeshLodGameState_H_
-#define _Demo_MeshLodGameState_H_
+#ifndef _Final_MeshLodGameState_H_
+#define _Final_MeshLodGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class MeshLodGameState : public TutorialGameState
     {
@@ -16,6 +16,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

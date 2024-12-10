@@ -26,8 +26,8 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
 
-#ifndef _Demo_UnitTesting_H_
-#define _Demo_UnitTesting_H_
+#ifndef _Final_UnitTesting_H_
+#define _Final_UnitTesting_H_
 
 #include "OgrePrerequisites.h"
 
@@ -39,7 +39,7 @@ THE SOFTWARE.
 
 #include <stdint.h>
 
-namespace Demo
+namespace Final
 {
     class GraphicsSystem;
     class KeyboardListener;
@@ -119,8 +119,8 @@ namespace Demo
 
         const Params &getParams() const { return mParams; }
 
-        void startRecording( Demo::GraphicsSystem *graphicsSystem );
-        void notifyRecordingNewFrame( Demo::GraphicsSystem *graphicsSystem );
+        void startRecording( Final::GraphicsSystem *graphicsSystem );
+        void notifyRecordingNewFrame( Final::GraphicsSystem *graphicsSystem );
 
         /** Saves the current recording to JSON, for later playback
         @param fullpath
@@ -146,6 +146,6 @@ namespace Demo
     protected:
         int runLoop( Ogre::String outputFolder );
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

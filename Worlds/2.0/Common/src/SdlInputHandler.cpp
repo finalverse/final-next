@@ -9,7 +9,7 @@
 
 #    include <SDL_syswm.h>
 
-namespace Demo
+namespace Final
 {
     SdlInputHandler::SdlInputHandler( SDL_Window *sdlWindow, MouseListener *mouseListener,
                                       KeyboardListener *keyboardListener,
@@ -293,5 +293,5 @@ namespace Demo
     KeyboardListener *SdlInputHandler::getKeyboardListener() { return mKeyboardListener; }
     //-----------------------------------------------------------------------------------
     MouseListener *SdlInputHandler::getMouseListener() { return mMouseListener; }
-}  // namespace Demo
+}  // namespace Final
 #endif

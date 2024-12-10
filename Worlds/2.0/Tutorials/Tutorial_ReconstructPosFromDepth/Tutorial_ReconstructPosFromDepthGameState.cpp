@@ -22,9 +22,9 @@
 #include "OgrePass.h"
 #include "OgreTechnique.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     Tutorial_ReconstructPosFromDepthGameState::Tutorial_ReconstructPosFromDepthGameState(
         const Ogre::String &helpDescription ) :
@@ -109,4 +109,4 @@ namespace Demo
         psParams->setNamedConstant( "projectionParams",
                                     Ogre::Vector4( projectionAB.x, projectionAB.y, 0, 0 ) );
     }
-}  // namespace Demo
+}  // namespace Final

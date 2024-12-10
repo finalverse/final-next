@@ -1,12 +1,12 @@
 
-#ifndef _Demo_DynamicGeometryGameState_H_
-#define _Demo_DynamicGeometryGameState_H_
+#ifndef _Final_DynamicGeometryGameState_H_
+#define _Final_DynamicGeometryGameState_H_
 
 #include "OgreMesh2.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     struct CubeVertices
     {
@@ -55,6 +55,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

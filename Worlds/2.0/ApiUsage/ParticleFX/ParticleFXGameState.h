@@ -1,11 +1,11 @@
 
-#ifndef Demo_ParticleFXGameState_H_
-#define Demo_ParticleFXGameState_H_
+#ifndef Final_ParticleFXGameState_H_
+#define Final_ParticleFXGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class ParticleFXGameState : public TutorialGameState
     {
@@ -20,6 +20,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

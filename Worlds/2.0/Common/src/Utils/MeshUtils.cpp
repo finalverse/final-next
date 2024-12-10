@@ -6,7 +6,7 @@
 #include "OgreMeshManager.h"
 #include "OgreMeshManager2.h"
 
-namespace Demo
+namespace Final
 {
     void MeshUtils::importV1Mesh( const Ogre::String &meshName, const Ogre::String &groupName )
     {
@@ -28,4 +28,4 @@ namespace Demo
         // Ogre::v1::MeshManager::getSingleton().remove( meshName );
     }
     //-----------------------------------------------------------------------------------
-}  // namespace Demo
+}  // namespace Final

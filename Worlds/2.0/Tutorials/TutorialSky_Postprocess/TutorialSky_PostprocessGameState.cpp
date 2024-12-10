@@ -18,9 +18,9 @@
 
 #include "OgreCamera.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     TutorialSky_PostprocessGameState::TutorialSky_PostprocessGameState(
         const Ogre::String &helpDescription ) :
@@ -53,4 +53,4 @@ namespace Demo
 
         TutorialGameState::createScene01();
     }
-}  // namespace Demo
+}  // namespace Final

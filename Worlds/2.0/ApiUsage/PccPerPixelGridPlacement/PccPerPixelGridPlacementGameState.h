@@ -1,6 +1,6 @@
 
-#ifndef _Demo_PccPerPixelGridPlacementGameState_H_
-#define _Demo_PccPerPixelGridPlacementGameState_H_
+#ifndef _Final_PccPerPixelGridPlacementGameState_H_
+#define _Final_PccPerPixelGridPlacementGameState_H_
 
 #include "OgrePrerequisites.h"
 
@@ -13,7 +13,7 @@ namespace Ogre
     class HlmsPbsDatablock;
 }  // namespace Ogre
 
-namespace Demo
+namespace Final
 {
     class PccPerPixelGridPlacementGameState : public TutorialGameState
     {
@@ -37,6 +37,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

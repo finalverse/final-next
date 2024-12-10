@@ -25,9 +25,9 @@
 #include "OgreDecal.h"
 #include "OgreWireAabb.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     Ogre::SceneNode *g_decalNode = 0;
 
@@ -484,4 +484,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

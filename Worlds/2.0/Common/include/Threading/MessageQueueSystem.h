@@ -9,7 +9,7 @@
 
 #include <map>
 
-namespace Demo
+namespace Final
 {
     namespace Mq
     {
@@ -140,6 +140,6 @@ namespace Demo
             virtual void processIncomingMessage( Mq::MessageId messageId, const void *data ) = 0;
         };
     }  // namespace Mq
-}  // namespace Demo
+}  // namespace Final
 
 #endif

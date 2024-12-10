@@ -21,7 +21,7 @@
 #include "OgreTextureGpuManager.h"
 #include "OgreWindow.h"
 
-using namespace Demo;
+using namespace Final;
 
 Hlms02CustomizationPerObjGameState::Hlms02CustomizationPerObjGameState(
     const Ogre::String &helpDescription ) :

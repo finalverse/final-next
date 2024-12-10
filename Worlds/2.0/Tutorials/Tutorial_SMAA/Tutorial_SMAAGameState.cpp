@@ -21,9 +21,9 @@
 
 #include "Utils/SmaaUtils.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     Tutorial_SMAAGameState::Tutorial_SMAAGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -160,4 +160,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

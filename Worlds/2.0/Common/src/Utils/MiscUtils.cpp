@@ -9,7 +9,7 @@
 #include "OgreMaterialManager.h"
 #include "OgreTechnique.h"
 
-namespace Demo
+namespace Final
 {
     void MiscUtils::setGaussianLogFilterParams( Ogre::HlmsComputeJob *job, Ogre::uint8 kernelRadius,
                                                 float gaussianDeviationFactor, Ogre::uint16 K )
@@ -193,4 +193,4 @@ namespace Demo
         GpuProgramParametersSharedPtr psParams = pass->getFragmentProgramParameters();
         psParams->setNamedConstant( "weights", &weights[0], kernelRadius + 1u, 1 );
     }
-}  // namespace Demo
+}  // namespace Final

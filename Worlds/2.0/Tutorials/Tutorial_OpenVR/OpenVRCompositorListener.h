@@ -1,6 +1,6 @@
 
-#ifndef _Demo_OpenVRCompositorListener_H_
-#define _Demo_OpenVRCompositorListener_H_
+#ifndef _Final_OpenVRCompositorListener_H_
+#define _Final_OpenVRCompositorListener_H_
 
 #include "Compositor/OgreCompositorWorkspaceListener.h"
 #include "OgreFrameListener.h"
@@ -10,7 +10,7 @@
 
 #include "openvr.h"
 
-namespace Demo
+namespace Final
 {
     namespace VrWaitingMode
     {
@@ -182,6 +182,6 @@ namespace Demo
         */
         bool canSyncCameraTransformImmediately() const;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

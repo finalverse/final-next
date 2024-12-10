@@ -17,7 +17,7 @@
 #include "OgreRoot.h"
 #include "OgreSceneManager.h"
 
-namespace Demo
+namespace Final
 {
     BillboardTestGameState::BillboardTestGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -129,4 +129,4 @@ namespace Demo
 
         TutorialGameState::createScene01();
     }
-}  // namespace Demo
+}  // namespace Final

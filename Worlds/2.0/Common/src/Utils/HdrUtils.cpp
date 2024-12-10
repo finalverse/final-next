@@ -15,7 +15,7 @@
 #include "OgrePass.h"
 #include "OgreTechnique.h"
 
-namespace Demo
+namespace Final
 {
     void HdrUtils::init( Ogre::uint8 fsaa )
     {
@@ -118,4 +118,4 @@ namespace Demo
             "brightThreshold",
             Ogre::Vector4( minThreshold, 1.0f / ( fullColourThreshold - minThreshold ), 0, 0 ) );
     }
-}  // namespace Demo
+}  // namespace Final

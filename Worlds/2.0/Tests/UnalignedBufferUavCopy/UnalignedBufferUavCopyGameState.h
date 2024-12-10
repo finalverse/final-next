@@ -1,11 +1,11 @@
 
-#ifndef _Demo_UnalignedBufferUavCopyGameState_H_
-#define _Demo_UnalignedBufferUavCopyGameState_H_
+#ifndef _Final_UnalignedBufferUavCopyGameState_H_
+#define _Final_UnalignedBufferUavCopyGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class UnalignedBufferUavCopyGameState : public TutorialGameState
     {
@@ -19,6 +19,6 @@ namespace Demo
         void createScene01() override;
         void destroyScene() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

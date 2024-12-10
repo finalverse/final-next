@@ -1,6 +1,6 @@
 
-#ifndef _Demo_GraphicsSystem_H_
-#define _Demo_GraphicsSystem_H_
+#ifndef _Final_GraphicsSystem_H_
+#define _Final_GraphicsSystem_H_
 
 #include "OgreOverlayPrerequisites.h"
 #include "OgrePrerequisites.h"
@@ -30,7 +30,7 @@
 #    endif
 #endif
 
-namespace Demo
+namespace Final
 {
     class SdlInputHandler;
 
@@ -179,6 +179,6 @@ namespace Demo
         virtual void stopCompositor();
         virtual void restartCompositor();
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

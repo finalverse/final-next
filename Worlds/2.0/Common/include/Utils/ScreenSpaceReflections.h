@@ -4,7 +4,7 @@
 #include "OgreGpuProgramParams.h"
 #include "OgreMatrix4.h"
 
-namespace Demo
+namespace Final
 {
     class ScreenSpaceReflections
     {
@@ -101,4 +101,4 @@ namespace Demo
                                     float        reprojectionMaxDistanceError = 2.0f,
                                     Ogre::uint16 pixelStride = 4, Ogre::uint16 maxSteps = 200 );
     };
-}  // namespace Demo
+}  // namespace Final

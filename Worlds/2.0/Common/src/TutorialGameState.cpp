@@ -18,9 +18,9 @@
 #include "OgreHlmsCompute.h"
 #include "OgreHlmsManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     TutorialGameState::TutorialGameState( const Ogre::String &helpDescription ) :
         mGraphicsSystem( 0 ),
@@ -205,4 +205,4 @@ namespace Demo
 
         GameState::mouseMoved( arg );
     }
-}  // namespace Demo
+}  // namespace Final

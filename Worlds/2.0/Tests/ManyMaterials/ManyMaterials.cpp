@@ -13,11 +13,11 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #    endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 #endif
 
-namespace Demo
+namespace Final
 {
     void MainEntryPoints::createSystems( GameState **outGraphicsGameState,
                                          GraphicsSystem **outGraphicsSystem,
@@ -42,4 +42,4 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle( void ) { return "Test many materials"; }
-}  // namespace Demo
+}  // namespace Final

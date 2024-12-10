@@ -51,7 +51,7 @@ THE SOFTWARE.
 //-----------------------------------------------------------------------------
 std::string Android_getCacheFolder()
 {
-    android_app *app = Demo::AndroidSystems::getAndroidApp();
+    android_app *app = Final::AndroidSystems::getAndroidApp();
 
     JNIEnv *jni = 0;
     app->activity->vm->AttachCurrentThread( &jni, nullptr );
@@ -76,7 +76,7 @@ std::string Android_getCacheFolder()
     return retVal;
 }
 
-namespace Demo
+namespace Final
 {
     struct AndroidAppController
     {
@@ -117,7 +117,7 @@ namespace Demo
                 }
                 catch( Ogre::RenderingAPIException &e )
                 {
-                    ANativeActivity *nativeActivity = Demo::AndroidSystems::getAndroidApp()->activity;
+                    ANativeActivity *nativeActivity = Final::AndroidSystems::getAndroidApp()->activity;
 
                     JNIEnv *jni = 0;
                     nativeActivity->vm->AttachCurrentThread( &jni, nullptr );
@@ -140,7 +140,7 @@ namespace Demo
 
                     mCriticalFailure = true;
 
-                    Demo::AndroidSystems::setNativeWindow( 0 );
+                    Final::AndroidSystems::setNativeWindow( 0 );
                     nativeActivity->vm->DetachCurrentThread();
                     return;
                 }
@@ -184,13 +184,13 @@ namespace Demo
                 OGRE_ASSERT_HIGH( dynamic_cast<Ogre::VulkanAndroidWindow *>( windowBase ) );
                 Ogre::VulkanAndroidWindow *window =
                     static_cast<Ogre::VulkanAndroidWindow *>( windowBase );
-                window->setNativeWindow( Demo::AndroidSystems::getNativeWindow() );
+                window->setNativeWindow( Final::AndroidSystems::getNativeWindow() );
             }
         }
 
         void destroy()
         {
-            Demo::AndroidSystems::setNativeWindow( 0 );
+            Final::AndroidSystems::setNativeWindow( 0 );
             if( mGraphicsSystem )
             {
                 Ogre::Window *windowBase = mGraphicsSystem->getRenderWindow();
@@ -241,7 +241,7 @@ namespace Demo
         }
     };
 
-    class DemoJniProvider final : public Ogre::AndroidJniProvider
+    class FinalJniProvider final : public Ogre::AndroidJniProvider
     {
         void acquire( JNIEnv **env, jobject *activity ) override
         {
@@ -256,10 +256,10 @@ namespace Demo
             app->activity->vm->DetachCurrentThread();
         }
     };
-}  // namespace Demo
+}  // namespace Final
 
-static Demo::AndroidAppController g_appController;
-static Demo::DemoJniProvider g_demoJniProvider;
+static Final::AndroidAppController g_appController;
+static Final::FinalJniProvider g_demoJniProvider;
 
 // Process the next main command.
 void handle_cmd( android_app *app, int32_t cmd )
@@ -268,8 +268,8 @@ void handle_cmd( android_app *app, int32_t cmd )
     {
     case APP_CMD_INIT_WINDOW:
         // The window is being shown, get it ready.
-        Demo::AndroidSystems::setAndroidApp( app );
-        Demo::AndroidSystems::setNativeWindow( app->window );
+        Final::AndroidSystems::setAndroidApp( app );
+        Final::AndroidSystems::setNativeWindow( app->window );
         g_appController.init();
         break;
     case APP_CMD_TERM_WINDOW:
@@ -294,8 +294,8 @@ void android_main( struct android_app *app )
     // Set the callback to process system events
     app->onAppCmd = handle_cmd;
 
-    Demo::AndroidSystems::setAndroidApp( app );
-    Demo::AndroidSystems::setJniProvider( &g_demoJniProvider );
+    Final::AndroidSystems::setAndroidApp( app );
+    Final::AndroidSystems::setJniProvider( &g_demoJniProvider );
 
     // !!! IMPORTANT !!!
     //
@@ -318,7 +318,7 @@ void android_main( struct android_app *app )
     // Main loop
     do
     {
-        if( ALooper_pollAll( Demo::AndroidSystems::getNativeWindow() ? 0 : -1, nullptr, &events,
+        if( ALooper_pollAll( Final::AndroidSystems::getNativeWindow() ? 0 : -1, nullptr, &events,
                              (void **)&source ) >= 0 )
         {
             if( source != NULL )
@@ -326,7 +326,7 @@ void android_main( struct android_app *app )
         }
 
         // render if vulkan is ready
-        if( Demo::AndroidSystems::getNativeWindow() )
+        if( Final::AndroidSystems::getNativeWindow() )
             g_appController.updateMainLoop();
     } while( app->destroyRequested == 0 );
 }

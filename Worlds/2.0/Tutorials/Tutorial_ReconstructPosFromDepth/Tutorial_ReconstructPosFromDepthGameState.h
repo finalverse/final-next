@@ -1,12 +1,12 @@
 
-#ifndef _Demo_Tutorial_ReconstructPosFromDepthGameState_H_
-#define _Demo_Tutorial_ReconstructPosFromDepthGameState_H_
+#ifndef _Final_Tutorial_ReconstructPosFromDepthGameState_H_
+#define _Final_Tutorial_ReconstructPosFromDepthGameState_H_
 
 #include "OgreMesh2.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Tutorial_ReconstructPosFromDepthGameState : public TutorialGameState
     {
@@ -15,6 +15,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

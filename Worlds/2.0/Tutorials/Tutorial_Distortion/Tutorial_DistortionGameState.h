@@ -1,11 +1,11 @@
 
-#ifndef _Demo_DistortionGameState_H_
-#define _Demo_DistortionGameState_H_
+#ifndef _Final_DistortionGameState_H_
+#define _Final_DistortionGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class DistortionGameState : public TutorialGameState
     {
@@ -37,6 +37,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

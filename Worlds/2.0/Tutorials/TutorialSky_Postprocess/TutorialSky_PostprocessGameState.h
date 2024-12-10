@@ -1,12 +1,12 @@
 
-#ifndef _Demo_TutorialSky_PostprocessGameState_H_
-#define _Demo_TutorialSky_PostprocessGameState_H_
+#ifndef _Final_TutorialSky_PostprocessGameState_H_
+#define _Final_TutorialSky_PostprocessGameState_H_
 
 #include "OgreMesh2.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     struct CubeVertices
     {
@@ -32,6 +32,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -447,7 +447,7 @@ int main( int /*argc*/, const char * /*argv*/[] )
 
     // Setup a basic compositor with a blue clear colour
     CompositorManager2 *compositorManager = root->getCompositorManager2();
-    const String workspaceName( "Demo Workspace" );
+    const String workspaceName( "Final Workspace" );
     const ColourValue backgroundColour( 0.2f, 0.4f, 0.6f );
     compositorManager->createBasicWorkspaceDef( workspaceName, backgroundColour, IdString() );
     compositorManager->addWorkspace( sceneManager, window->getTexture(), camera, workspaceName, true );

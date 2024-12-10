@@ -21,11 +21,11 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #    endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 #endif
 
-namespace Demo
+namespace Final
 {
     class ShadowMapFromCodeGraphicsSystem : public GraphicsSystem
     {
@@ -267,4 +267,4 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle() { return "Shadow map from code"; }
-}  // namespace Demo
+}  // namespace Final

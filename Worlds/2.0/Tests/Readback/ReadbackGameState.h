@@ -1,6 +1,6 @@
 
-#ifndef _Demo_ReadbackGameState_H_
-#define _Demo_ReadbackGameState_H_
+#ifndef _Final_ReadbackGameState_H_
+#define _Final_ReadbackGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -12,7 +12,7 @@ namespace Ogre
     class HlmsUnlitDatablock;
 }
 
-namespace Demo
+namespace Final
 {
     class ReadbackGameState final : public TutorialGameState, public Ogre::UniformScalableTask
     {
@@ -33,6 +33,6 @@ namespace Demo
 
         void execute( size_t threadId, size_t numThreads ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -1,6 +1,6 @@
 
-#ifndef _Demo_EndFrameOnceFailureGameState_H_
-#define _Demo_EndFrameOnceFailureGameState_H_
+#ifndef _Final_EndFrameOnceFailureGameState_H_
+#define _Final_EndFrameOnceFailureGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -12,7 +12,7 @@ namespace Ogre
     class HlmsUnlitDatablock;
 }
 
-namespace Demo
+namespace Final
 {
     class EndFrameOnceFailureGameState final : public TutorialGameState, public Ogre::UniformScalableTask
     {
@@ -37,6 +37,6 @@ namespace Demo
 
         void execute( size_t threadId, size_t numThreads ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

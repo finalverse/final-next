@@ -61,9 +61,9 @@ THE SOFTWARE.
 #    include "OgreAtmosphereNpr.h"
 #endif
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     Tutorial_TerrainGameState::Tutorial_TerrainGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -361,4 +361,4 @@ namespace Demo
             datablock->setDetailMapOffsetScale( 1, detailMapOffsetScale[1] );
         }
     }
-}  // namespace Demo
+}  // namespace Final

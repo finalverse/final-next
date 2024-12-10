@@ -29,9 +29,9 @@
 #include "OgreOverlayContainer.h"
 #include "OgreOverlayManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     struct Presets
     {
@@ -402,4 +402,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

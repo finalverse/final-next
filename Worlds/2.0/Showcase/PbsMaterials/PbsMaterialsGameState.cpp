@@ -22,9 +22,9 @@
 #include "OgreTextureFilters.h"
 #include "OgreTextureGpuManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     struct BrdfModes
     {
@@ -454,4 +454,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

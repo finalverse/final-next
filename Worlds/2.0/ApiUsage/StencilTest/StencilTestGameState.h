@@ -1,11 +1,11 @@
 
-#ifndef _Demo_StencilTestGameState_H_
-#define _Demo_StencilTestGameState_H_
+#ifndef _Final_StencilTestGameState_H_
+#define _Final_StencilTestGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class StencilTestGameState : public TutorialGameState
     {
@@ -18,6 +18,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -32,7 +32,7 @@ import android.app.AlertDialog
 import android.app.NativeActivity
 import android.graphics.Rect
 
-class DemoNativeActivity : NativeActivity() {
+class FinalNativeActivity : NativeActivity() {
     fun showNoVulkanAlert(errorMsg: String, detailedErrorMsg: String) {
         runOnUiThread {
             var dlg = AlertDialog.Builder(this)

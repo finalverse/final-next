@@ -1,6 +1,6 @@
 
-#ifndef _Demo_StaticShadowMapsGameState_H_
-#define _Demo_StaticShadowMapsGameState_H_
+#ifndef _Final_StaticShadowMapsGameState_H_
+#define _Final_StaticShadowMapsGameState_H_
 
 #include "OgreOverlay.h"
 #include "OgreOverlayPrerequisites.h"
@@ -13,7 +13,7 @@ namespace Ogre
     class CompositorShadowNode;
 }
 
-namespace Demo
+namespace Final
 {
     class StaticShadowMapsGameState : public TutorialGameState
     {
@@ -41,6 +41,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

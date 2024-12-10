@@ -2,7 +2,7 @@
 
 #import <AppKit/NSWindow.h>
 
-namespace Demo
+namespace Final
 {
     unsigned long WindowContentViewHandle( const SDL_SysWMinfo &info )
     {

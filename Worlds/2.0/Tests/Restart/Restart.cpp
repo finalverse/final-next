@@ -12,7 +12,7 @@
 #include "MainEntryPointHelper.h"
 #include "System/MainEntryPoints.h"
 
-namespace Demo
+namespace Final
 {
     class RestartGraphicsSystem final : public GraphicsSystem
     {
@@ -75,7 +75,7 @@ namespace Demo
     {
         return "Tests Ogre can successfully shutdown and reinitialize several times without crashing.";
     }
-}  // namespace Demo
+}  // namespace Final
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
 INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLine, INT nCmdShow )
@@ -85,7 +85,7 @@ int mainApp( int argc, const char *argv[] )
 {
     for( int i = 0; i < 5; ++i )
     {
-        int result = Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+        int result = Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 
         if( result != 0 )
             return result;

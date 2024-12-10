@@ -1,12 +1,12 @@
 
-#ifndef _Demo_TutorialCompute02_UavBufferGameState_H_
-#define _Demo_TutorialCompute02_UavBufferGameState_H_
+#ifndef _Final_TutorialCompute02_UavBufferGameState_H_
+#define _Final_TutorialCompute02_UavBufferGameState_H_
 
 #include "OgreMaterial.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class TutorialCompute02_UavBufferGameState : public TutorialGameState
     {
@@ -27,6 +27,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

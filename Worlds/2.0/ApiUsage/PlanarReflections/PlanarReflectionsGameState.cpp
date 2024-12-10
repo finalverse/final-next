@@ -37,9 +37,9 @@
 
 #include "OgrePlanarReflections.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     class PlanarReflectionsWorkspaceListener final : public Ogre::CompositorWorkspaceListener
     {
@@ -333,4 +333,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

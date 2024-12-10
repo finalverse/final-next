@@ -7,11 +7,11 @@
 
 #include "OgreTextAreaOverlayElement.h"
 
-using namespace Demo;
+using namespace Final;
 
 extern const double cFrametime;
 
-namespace Demo
+namespace Final
 {
     GraphicsGameState::GraphicsGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -36,4 +36,4 @@ namespace Demo
             outText += Ogre::StringConverter::toString( weight );
         }
     }
-}  // namespace Demo
+}  // namespace Final

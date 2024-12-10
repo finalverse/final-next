@@ -30,9 +30,9 @@
 #include "OgreMeshLodGenerator.h"
 #include "OgrePixelCountLodStrategy.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     MeshLodGameState::MeshLodGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -192,4 +192,4 @@ namespace Demo
         TutorialGameState::createScene01();
     }
     //-----------------------------------------------------------------------------------
-}  // namespace Demo
+}  // namespace Final

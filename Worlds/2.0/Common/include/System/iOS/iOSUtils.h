@@ -30,11 +30,11 @@ THE SOFTWARE.
 
 #include "OgreVector2.h"
 
-namespace Demo
+namespace Final
 {
     class iOSUtils
     {
     public:
         static Ogre::Vector2 getScreenResolutionInPoints();
     };
-}  // namespace Demo
+}  // namespace Final

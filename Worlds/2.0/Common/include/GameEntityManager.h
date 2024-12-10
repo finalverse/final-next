@@ -1,11 +1,11 @@
 
-#ifndef _Demo_GameEntityManager_H_
-#define _Demo_GameEntityManager_H_
+#ifndef _Final_GameEntityManager_H_
+#define _Final_GameEntityManager_H_
 
 #include "GameEntity.h"
 #include "Threading/MessageQueueSystem.h"
 
-namespace Demo
+namespace Final
 {
     class GraphicsSystem;
     class LogicSystem;
@@ -95,6 +95,6 @@ namespace Demo
         /// Must be called every frame from the LOGIC THREAD.
         void finishFrameParallel();
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

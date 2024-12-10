@@ -1,11 +1,11 @@
 
-#ifndef _Demo_StereoRenderingGameState_H_
-#define _Demo_StereoRenderingGameState_H_
+#ifndef _Final_StereoRenderingGameState_H_
+#define _Final_StereoRenderingGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class StereoRenderingGameState : public TutorialGameState
     {
@@ -18,6 +18,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -1,11 +1,11 @@
 
-#ifndef _Demo_TutorialCompute01_UavTextureGameState_H_
-#define _Demo_TutorialCompute01_UavTextureGameState_H_
+#ifndef _Final_TutorialCompute01_UavTextureGameState_H_
+#define _Final_TutorialCompute01_UavTextureGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class TutorialCompute01_UavTextureGameState : public TutorialGameState
     {
@@ -19,6 +19,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

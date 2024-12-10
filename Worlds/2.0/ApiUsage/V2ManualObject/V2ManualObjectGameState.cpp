@@ -10,9 +10,9 @@
 
 #include <sstream>
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     const size_t GridSize = 15;
     const float GridStep = 1.0f / GridSize;
@@ -234,4 +234,4 @@ namespace Demo
             i += 4;
         }
     }
-}  // namespace Demo
+}  // namespace Final

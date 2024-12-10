@@ -12,7 +12,7 @@
 #include "MainEntryPointHelper.h"
 #include "System/MainEntryPoints.h"
 
-namespace Demo
+namespace Final
 {
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE || OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
     void MainEntryPoints::createSystems( GameState **outGraphicsGameState,
@@ -37,12 +37,12 @@ namespace Demo
 
     const char *MainEntryPoints::getWindowTitle()
     {
-        return "Demonstrating determinsitic frame loop timing";
+        return "Finalnstrating determinsitic frame loop timing";
     }
 #endif
-}  // namespace Demo
+}  // namespace Final
 
-using namespace Demo;
+using namespace Final;
 
 extern const double cFrametime[2];
 const double cFrametime[2] = { 1.0 / 25.0, 1.0 / 60.0 };

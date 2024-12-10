@@ -37,9 +37,9 @@
 
 #include "OgreWireAabb.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     const Ogre::uint32 c_areaLightsPoolId = 759384;
 
@@ -500,4 +500,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

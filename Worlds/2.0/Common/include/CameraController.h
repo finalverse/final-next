@@ -1,11 +1,11 @@
 
-#ifndef _Demo_CameraController_H_
-#define _Demo_CameraController_H_
+#ifndef _Final_CameraController_H_
+#define _Final_CameraController_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class CameraController
     {
@@ -36,6 +36,6 @@ namespace Demo
 
         void mouseMoved( const SDL_Event &arg );
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

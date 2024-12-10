@@ -37,7 +37,7 @@
 
 using namespace Ogre;
 
-namespace Demo
+namespace Final
 {
     PostprocessingGameState::PostprocessingGameState( const String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -759,4 +759,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

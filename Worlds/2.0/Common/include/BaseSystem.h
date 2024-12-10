@@ -1,10 +1,10 @@
 
-#ifndef _Demo_BaseSystem_H_
-#define _Demo_BaseSystem_H_
+#ifndef _Final_BaseSystem_H_
+#define _Final_BaseSystem_H_
 
 #include "Threading/MessageQueueSystem.h"
 
-namespace Demo
+namespace Final
 {
     class GameState;
 
@@ -30,6 +30,6 @@ namespace Demo
         void finishFrameParallel();
         void finishFrame();
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

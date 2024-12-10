@@ -42,10 +42,10 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 
-namespace Demo
+namespace Final
 {
     class EmptyProjectGraphicsSystem final : public GraphicsSystem
     {
@@ -199,4 +199,4 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle() { return "Empty Project Sample"; }
-}  // namespace Demo
+}  // namespace Final

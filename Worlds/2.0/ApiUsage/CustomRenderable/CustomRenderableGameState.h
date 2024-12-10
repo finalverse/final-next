@@ -1,6 +1,6 @@
 
-#ifndef _Demo_CustomRenderableGameState_H_
-#define _Demo_CustomRenderableGameState_H_
+#ifndef _Final_CustomRenderableGameState_H_
+#define _Final_CustomRenderableGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -10,7 +10,7 @@ namespace Ogre
     class MyCustomRenderable;
 }
 
-namespace Demo
+namespace Final
 {
     class CustomRenderableGameState : public TutorialGameState
     {
@@ -22,6 +22,6 @@ namespace Demo
         void createScene01() override;
         void destroyScene() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

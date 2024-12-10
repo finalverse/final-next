@@ -1,11 +1,11 @@
 
-#ifndef Demo_Hlms02CustomizationPerObjGameState_H
-#define Demo_Hlms02CustomizationPerObjGameState_H
+#ifndef Final_Hlms02CustomizationPerObjGameState_H
+#define Final_Hlms02CustomizationPerObjGameState_H
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms02CustomizationPerObjGameState : public TutorialGameState
     {
@@ -22,6 +22,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

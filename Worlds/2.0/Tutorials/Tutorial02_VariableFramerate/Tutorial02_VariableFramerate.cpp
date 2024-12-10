@@ -11,7 +11,7 @@
 #include "MainEntryPointHelper.h"
 #include "System/MainEntryPoints.h"
 
-namespace Demo
+namespace Final
 {
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE || OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
     void MainEntryPoints::createSystems( GameState **outGraphicsGameState,
@@ -34,9 +34,9 @@ namespace Demo
         delete graphicsGameState;
     }
 #endif
-}  // namespace Demo
+}  // namespace Final
 
-using namespace Demo;
+using namespace Final;
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
 INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLine, INT nCmdShow )

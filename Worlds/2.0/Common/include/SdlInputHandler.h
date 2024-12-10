@@ -2,8 +2,8 @@
 // Thanks to Jordan Milne and Scrawl for allowing to use their
 // sdlinputwrapper files as base under the MIT license
 
-#ifndef _Demo_SdlInputHandler_H_
-#define _Demo_SdlInputHandler_H_
+#ifndef _Final_SdlInputHandler_H_
+#define _Final_SdlInputHandler_H_
 
 #include "BaseSystem.h"
 #include "OgrePrerequisites.h"
@@ -25,7 +25,7 @@
 #        pragma GCC diagnostic pop
 #    endif
 
-namespace Demo
+namespace Final
 {
     class MouseListener;
     class KeyboardListener;
@@ -104,7 +104,7 @@ namespace Demo
         KeyboardListener *getKeyboardListener();
         MouseListener *   getMouseListener();
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif
 

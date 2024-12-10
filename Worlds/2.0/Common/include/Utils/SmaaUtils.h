@@ -1,7 +1,7 @@
 
 #include "OgrePrerequisites.h"
 
-namespace Demo
+namespace Final
 {
     class SmaaUtils
     {
@@ -34,4 +34,4 @@ namespace Demo
         static void initialize( Ogre::RenderSystem *renderSystem, PresetQuality quality,
                                 EdgeDetectionMode edgeDetectionMode );
     };
-}  // namespace Demo
+}  // namespace Final

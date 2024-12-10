@@ -1,6 +1,6 @@
 
-#ifndef _Demo_TutorialGameState_H_
-#define _Demo_TutorialGameState_H_
+#ifndef _Final_TutorialGameState_H_
+#define _Final_TutorialGameState_H_
 
 #include "OgrePrerequisites.h"
 
@@ -14,7 +14,7 @@ namespace Ogre
     }
 }  // namespace Ogre
 
-namespace Demo
+namespace Final
 {
     class GraphicsSystem;
     class CameraController;
@@ -53,6 +53,6 @@ namespace Demo
 
         void mouseMoved( const SDL_Event &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

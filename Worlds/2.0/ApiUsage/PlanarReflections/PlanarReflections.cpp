@@ -19,10 +19,10 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 
-namespace Demo
+namespace Final
 {
     class PlanarReflectionsGraphicsSystem : public GraphicsSystem
     {
@@ -104,4 +104,4 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle() { return "Planar Reflections"; }
-}  // namespace Demo
+}  // namespace Final

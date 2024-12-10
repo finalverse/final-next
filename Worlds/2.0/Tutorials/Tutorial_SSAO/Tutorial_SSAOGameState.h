@@ -1,12 +1,12 @@
 
-#ifndef _Demo_Tutorial_SSAOGameState_H_
-#define _Demo_Tutorial_SSAOGameState_H_
+#ifndef _Final_Tutorial_SSAOGameState_H_
+#define _Final_Tutorial_SSAOGameState_H_
 
 #include "OgreMesh2.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Tutorial_SSAOGameState : public TutorialGameState
     {
@@ -36,6 +36,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

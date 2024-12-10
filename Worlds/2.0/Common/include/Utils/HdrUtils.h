@@ -1,7 +1,7 @@
 
 #include "OgrePrerequisites.h"
 
-namespace Demo
+namespace Final
 {
     class HdrUtils
     {
@@ -61,4 +61,4 @@ namespace Demo
         */
         static void setBloomThreshold( float minThreshold, float fullColourThreshold );
     };
-}  // namespace Demo
+}  // namespace Final

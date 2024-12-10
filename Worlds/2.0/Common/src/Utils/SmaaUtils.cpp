@@ -8,7 +8,7 @@
 #include "OgrePass.h"
 #include "OgreTechnique.h"
 
-namespace Demo
+namespace Final
 {
     void SmaaUtils::initialize( Ogre::RenderSystem *renderSystem, PresetQuality quality,
                                 EdgeDetectionMode edgeDetectionMode )
@@ -94,4 +94,4 @@ namespace Demo
             pass->getFragmentProgramParameters()->copyConstantsFrom( *oldParams );
         }
     }
-}  // namespace Demo
+}  // namespace Final

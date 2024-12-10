@@ -1,6 +1,6 @@
 
-#ifndef Demo_Tutorial_Hlms05_CustomizationPerObjData_H
-#define Demo_Tutorial_Hlms05_CustomizationPerObjData_H
+#ifndef Final_Tutorial_Hlms05_CustomizationPerObjData_H
+#define Final_Tutorial_Hlms05_CustomizationPerObjData_H
 
 #include "GraphicsSystem.h"
 
@@ -18,7 +18,7 @@
 #include "OgreHlmsManager.h"
 #include "OgreHlmsPbs.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms05CustomizationPerObjDataGraphicsSystem final : public GraphicsSystem
     {
@@ -140,6 +140,6 @@ namespace Demo
         {
         }
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

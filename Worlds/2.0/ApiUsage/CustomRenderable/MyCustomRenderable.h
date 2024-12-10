@@ -1,6 +1,6 @@
 
-#ifndef _Demo_MyCustomRenderable_H_
-#define _Demo_MyCustomRenderable_H_
+#ifndef _Final_MyCustomRenderable_H_
+#define _Final_MyCustomRenderable_H_
 
 #include "OgreMovableObject.h"
 #include "OgreRenderable.h"

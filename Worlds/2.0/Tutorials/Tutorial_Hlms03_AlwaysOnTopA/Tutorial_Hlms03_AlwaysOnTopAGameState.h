@@ -1,11 +1,11 @@
 
-#ifndef Demo_Hlms03AlwaysOnTopAGameState_H
-#define Demo_Hlms03AlwaysOnTopAGameState_H
+#ifndef Final_Hlms03AlwaysOnTopAGameState_H
+#define Final_Hlms03AlwaysOnTopAGameState_H
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms03AlwaysOnTopAGameState : public TutorialGameState
     {
@@ -18,6 +18,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

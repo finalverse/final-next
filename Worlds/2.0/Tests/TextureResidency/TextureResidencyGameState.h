@@ -1,6 +1,6 @@
 
-#ifndef _Demo_TextureResidencyGameState_H_
-#define _Demo_TextureResidencyGameState_H_
+#ifndef _Final_TextureResidencyGameState_H_
+#define _Final_TextureResidencyGameState_H_
 
 #include "OgreOverlay.h"
 #include "OgreOverlayPrerequisites.h"
@@ -9,7 +9,7 @@
 #include "OgreGpuResource.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class TextureResidencyGameState : public TutorialGameState
     {
@@ -52,6 +52,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

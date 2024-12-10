@@ -1,6 +1,6 @@
 
-#ifndef Demo_Hlms05MyHlmsPbs_H
-#define Demo_Hlms05MyHlmsPbs_H
+#ifndef Final_Hlms05MyHlmsPbs_H
+#define Final_Hlms05MyHlmsPbs_H
 
 #include "OgreHlmsListener.h"
 #include "OgreHlmsPbs.h"

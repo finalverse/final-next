@@ -1,6 +1,6 @@
 
-#ifndef _Demo_MainEntryPoints_H_
-#define _Demo_MainEntryPoints_H_
+#ifndef _Final_MainEntryPoints_H_
+#define _Final_MainEntryPoints_H_
 
 #include "OgrePrerequisites.h"
 
@@ -11,14 +11,14 @@
 #    include <windows.h>
 #endif
 
-namespace Demo
+namespace Final
 {
     class GameState;
     class GraphicsSystem;
     class LogicSystem;
-}  // namespace Demo
+}  // namespace Final
 
-namespace Demo
+namespace Final
 {
     /** Most of our demos use the same basic setup for game loop. If you want to understand
         how it works in depth, see Tutorial01_Initialization through Tutorial06_Multithreading
@@ -124,6 +124,6 @@ namespace Demo
         static int mainAppMultiThreaded( int argc, const char *argv[] );
 #endif
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -17,7 +17,7 @@
 #include "OgreMeshManager2.h"
 #include "OgreSceneManager.h"
 
-using namespace Demo;
+using namespace Final;
 
 Hlms04AlwaysOnTopBGameState::Hlms04AlwaysOnTopBGameState( const Ogre::String &helpDescription ) :
     TutorialGameState( helpDescription )

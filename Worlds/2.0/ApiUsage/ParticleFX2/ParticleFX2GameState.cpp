@@ -24,7 +24,7 @@
 
 #include "ParticleSystem/OgreParticleSystem2.h"
 
-using namespace Demo;
+using namespace Final;
 
 ParticleFX2GameState::ParticleFX2GameState( const Ogre::String &helpDescription ) :
     TutorialGameState( helpDescription ),

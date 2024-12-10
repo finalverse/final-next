@@ -35,9 +35,9 @@
 #include "OgreTechnique.h"
 #include "OgreTextureUnitState.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     LocalCubemapsManualProbesGameState::LocalCubemapsManualProbesGameState(
         const Ogre::String &helpDescription ) :
@@ -193,13 +193,13 @@ namespace Demo
             Ogre::HlmsBlendblock blendblock;
             Ogre::HlmsMacroblock macroblock;
 
-            struct DemoMaterials
+            struct FinalMaterials
             {
                 Ogre::String matName;
                 Ogre::ColourValue colour;
             };
 
-            DemoMaterials materials[4] = {
+            FinalMaterials materials[4] = {
                 { "Red", Ogre::ColourValue::Red },
                 { "Green", Ogre::ColourValue::Green },
                 { "Blue", Ogre::ColourValue::Blue },
@@ -438,4 +438,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

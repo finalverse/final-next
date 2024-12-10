@@ -1,12 +1,12 @@
 
-#ifndef _Demo_GameEntity_H_
-#define _Demo_GameEntity_H_
+#ifndef _Final_GameEntity_H_
+#define _Final_GameEntity_H_
 
 #include "OgreQuaternion.h"
 #include "OgreStringVector.h"
 #include "OgreVector3.h"
 
-namespace Demo
+namespace Final
 {
 #define NUM_GAME_ENTITY_BUFFERS 4
 
@@ -80,6 +80,6 @@ namespace Demo
     };
 
     typedef std::vector<GameEntity *> GameEntityVec;
-}  // namespace Demo
+}  // namespace Final
 
 #endif

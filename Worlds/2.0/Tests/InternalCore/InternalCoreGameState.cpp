@@ -5,7 +5,7 @@
 
 #include "Math/Array/OgreArrayVector3.h"
 
-using namespace Demo;
+using namespace Final;
 
 InternalCoreGameState::InternalCoreGameState( const Ogre::String &helpDescription ) :
     TutorialGameState( helpDescription )

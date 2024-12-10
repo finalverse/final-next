@@ -4,9 +4,9 @@
 
 #include "OgreVector3.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     LogicGameState::LogicGameState() : mDisplacement( 0 ), mGraphicsGameState( 0 ) {}
     //-----------------------------------------------------------------------------------
@@ -29,4 +29,4 @@ namespace Demo
 
         GameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

@@ -1,6 +1,6 @@
 
-#ifndef _Demo_Morph_H_
-#define _Demo_Morph_H_
+#ifndef _Final_Morph_H_
+#define _Final_Morph_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -10,7 +10,7 @@ namespace Ogre
     class SkeletonAnimation;
 }
 
-namespace Demo
+namespace Final
 {
     class MorphAnimationsGameState : public TutorialGameState
     {
@@ -25,6 +25,6 @@ namespace Demo
         void createScene01() override;
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

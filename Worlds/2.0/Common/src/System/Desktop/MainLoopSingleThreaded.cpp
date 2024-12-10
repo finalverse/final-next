@@ -43,13 +43,13 @@ THE SOFTWARE.
 
 #include "Threading/OgreThreads.h"
 
-using namespace Demo;
+using namespace Final;
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-INT WINAPI Demo::MainEntryPoints::mainAppSingleThreaded( HINSTANCE hInst, HINSTANCE hPrevInstance,
+INT WINAPI Final::MainEntryPoints::mainAppSingleThreaded( HINSTANCE hInst, HINSTANCE hPrevInstance,
                                                          LPSTR strCmdLine, INT nCmdShow )
 #else
-int Demo::MainEntryPoints::mainAppSingleThreaded( int argc, const char *argv[] )
+int Final::MainEntryPoints::mainAppSingleThreaded( int argc, const char *argv[] )
 #endif
 {
     UnitTest unitTest;

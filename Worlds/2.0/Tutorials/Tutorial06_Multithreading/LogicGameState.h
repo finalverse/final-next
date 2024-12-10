@@ -1,11 +1,11 @@
 
-#ifndef _Demo_MyGameState_H_
-#define _Demo_MyGameState_H_
+#ifndef _Final_MyGameState_H_
+#define _Final_MyGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class LogicSystem;
     struct GameEntity;
@@ -28,6 +28,6 @@ namespace Demo
         void createScene01() override;
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

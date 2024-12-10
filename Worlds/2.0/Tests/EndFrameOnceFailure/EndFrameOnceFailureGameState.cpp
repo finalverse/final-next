@@ -26,9 +26,9 @@
 #include "OgreTextureGpuManager.h"
 #include "Vao/OgreVaoManager.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     EndFrameOnceFailureGameState::EndFrameOnceFailureGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -302,4 +302,4 @@ namespace Demo
             "\nThis test draws a random colour to an offscreen RTT and downloads\n"
             "its contents. If the colour doesn't match we throw an error.";
     }
-}  // namespace Demo
+}  // namespace Final

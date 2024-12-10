@@ -7,9 +7,9 @@
 
 #include "OgreTextAreaOverlayElement.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     TutorialCompute01_UavTextureGameState::TutorialCompute01_UavTextureGameState(
         const Ogre::String &helpDescription ) :
@@ -46,4 +46,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

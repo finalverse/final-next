@@ -3,7 +3,7 @@
 #include "OgrePrerequisites.h"
 #include "OgreStringVector.h"
 
-namespace Demo
+namespace Final
 {
     /** Functions mostly useful for Unit Testing
      */
@@ -65,4 +65,4 @@ namespace Demo
         void generatePbsDatablocksWithTextures( Ogre::uint32 numDatablocks, Ogre::uint32 firstTextureIdx,
                                                 Ogre::uint32 numTextures );
     };
-}  // namespace Demo
+}  // namespace Final

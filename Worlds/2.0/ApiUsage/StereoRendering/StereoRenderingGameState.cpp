@@ -8,9 +8,9 @@
 
 #include "OgreCamera.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     StereoRenderingGameState::StereoRenderingGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -66,4 +66,4 @@ namespace Demo
 
         TutorialGameState::update( timeSinceLast );
     }
-}  // namespace Demo
+}  // namespace Final

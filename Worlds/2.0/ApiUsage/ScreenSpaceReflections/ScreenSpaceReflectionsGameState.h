@@ -1,6 +1,6 @@
 
-#ifndef _Demo_ScreenSpaceReflectionsGameState_H_
-#define _Demo_ScreenSpaceReflectionsGameState_H_
+#ifndef _Final_ScreenSpaceReflectionsGameState_H_
+#define _Final_ScreenSpaceReflectionsGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
@@ -29,7 +29,7 @@ namespace Ogre
     class HlmsPbsDatablock;
 }
 
-namespace Demo
+namespace Final
 {
     class ScreenSpaceReflectionsGameState : public TutorialGameState
     {
@@ -48,6 +48,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

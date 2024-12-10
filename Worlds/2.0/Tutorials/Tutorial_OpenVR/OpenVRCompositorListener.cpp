@@ -8,7 +8,7 @@
 
 #include "Compositor/OgreCompositorWorkspace.h"
 
-namespace Demo
+namespace Final
 {
     OpenVRCompositorListener::OpenVRCompositorListener( vr::IVRSystem *hmd,
                                                         vr::IVRCompositor *vrCompositor,
@@ -289,4 +289,4 @@ namespace Demo
     {
         return mWaitingMode <= VrWaitingMode::BeforeSceneGraph || mWaitingMode <= mFirstGlitchFreeMode;
     }
-}  // namespace Demo
+}  // namespace Final

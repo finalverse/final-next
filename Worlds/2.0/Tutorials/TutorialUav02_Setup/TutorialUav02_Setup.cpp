@@ -13,7 +13,7 @@
 #include "System/Android/AndroidSystems.h"
 #include "System/MainEntryPoints.h"
 
-namespace Demo
+namespace Final
 {
     class TutorialUav02_SetupGraphicsSystem final : public GraphicsSystem
     {
@@ -86,7 +86,7 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle() { return "UAV Setup Example"; }
-}  // namespace Demo
+}  // namespace Final
 
 #if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID
 #    if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
@@ -95,6 +95,6 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #    endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 #endif

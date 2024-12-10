@@ -1,11 +1,11 @@
 
-#ifndef _Demo_RestartGameState_H_
-#define _Demo_RestartGameState_H_
+#ifndef _Final_RestartGameState_H_
+#define _Final_RestartGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class RestartGameState : public TutorialGameState
     {
@@ -25,6 +25,6 @@ namespace Demo
 
         void update( float timeSinceLast ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

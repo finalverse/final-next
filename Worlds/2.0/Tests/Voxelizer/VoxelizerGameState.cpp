@@ -26,11 +26,11 @@
 
 #include "OgreWindow.h"
 
-using namespace Demo;
+using namespace Final;
 
 #define TODO_do_this_in_voxelizer
 
-namespace Demo
+namespace Final
 {
     VoxelizerGameState::VoxelizerGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -658,4 +658,4 @@ namespace Demo
             TutorialGameState::keyReleased( arg );
         }
     }
-}  // namespace Demo
+}  // namespace Final

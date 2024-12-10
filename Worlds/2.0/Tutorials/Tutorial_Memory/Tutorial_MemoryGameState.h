@@ -1,6 +1,6 @@
 
-#ifndef _Demo_MemoryGameState_H_
-#define _Demo_MemoryGameState_H_
+#ifndef _Final_MemoryGameState_H_
+#define _Final_MemoryGameState_H_
 
 #include "OgreOverlayPrerequisites.h"
 #include "OgrePrerequisites.h"
@@ -11,7 +11,7 @@
 #include "OgreTextureGpuManagerListener.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class SceneFormatGameState;
 
@@ -57,6 +57,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

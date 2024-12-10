@@ -1,6 +1,6 @@
 
-#ifndef _Demo_UpdatingDecalsAndAreaLightTexGameState_H_
-#define _Demo_UpdatingDecalsAndAreaLightTexGameState_H_
+#ifndef _Final_UpdatingDecalsAndAreaLightTexGameState_H_
+#define _Final_UpdatingDecalsAndAreaLightTexGameState_H_
 
 #include "OgreOverlay.h"
 #include "OgreOverlayPrerequisites.h"
@@ -8,7 +8,7 @@
 
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     static const Ogre::uint32 c_numAreaLights = 4u;
 
@@ -56,6 +56,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

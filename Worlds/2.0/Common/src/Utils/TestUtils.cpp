@@ -11,7 +11,7 @@
 #include "OgreHlmsUnlitDatablock.h"
 #include "OgreRoot.h"
 
-namespace Demo
+namespace Final
 {
     TestUtils::TestUtils() :
         mNumGenTextures( 0 ),
@@ -153,4 +153,4 @@ namespace Demo
 
         mNumPbsDatablocks += numDatablocks;
     }
-}  // namespace Demo
+}  // namespace Final

@@ -23,7 +23,7 @@
 #    include <SDL_syswm.h>
 #endif
 
-namespace Demo
+namespace Final
 {
     LogicSystem::LogicSystem( GameState *gameState ) :
         BaseSystem( gameState ),
@@ -95,4 +95,4 @@ namespace Demo
             break;
         }
     }
-}  // namespace Demo
+}  // namespace Final

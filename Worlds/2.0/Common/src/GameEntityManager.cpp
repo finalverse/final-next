@@ -4,7 +4,7 @@
 
 #include "LogicSystem.h"
 
-namespace Demo
+namespace Final
 {
     const size_t cNumTransforms = 250;
 
@@ -192,4 +192,4 @@ namespace Demo
             mScheduledForRemovalCurrentSlot = std::numeric_limits<size_t>::max();
         }
     }
-}  // namespace Demo
+}  // namespace Final

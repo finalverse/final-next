@@ -1,6 +1,6 @@
 
-#ifndef _Demo_MemoryCleanupGameState_H_
-#define _Demo_MemoryCleanupGameState_H_
+#ifndef _Final_MemoryCleanupGameState_H_
+#define _Final_MemoryCleanupGameState_H_
 
 #include "OgreOverlayPrerequisites.h"
 #include "OgrePrerequisites.h"
@@ -9,7 +9,7 @@
 #include "OgreOverlay.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class MemoryCleanupGameState : public TutorialGameState
     {
@@ -43,6 +43,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

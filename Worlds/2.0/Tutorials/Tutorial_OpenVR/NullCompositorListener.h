@@ -1,6 +1,6 @@
 
-#ifndef _Demo_NullCompositorListener_H_
-#define _Demo_NullCompositorListener_H_
+#ifndef _Final_NullCompositorListener_H_
+#define _Final_NullCompositorListener_H_
 
 #include "Compositor/OgreCompositorWorkspaceListener.h"
 #include "OgreFrameListener.h"
@@ -8,7 +8,7 @@
 #include "OgreCamera.h"
 #include "OgreMatrix4.h"
 
-namespace Demo
+namespace Final
 {
     class NullCompositorListener : public Ogre::FrameListener, public Ogre::CompositorWorkspaceListener
     {
@@ -57,6 +57,6 @@ namespace Demo
         */
         bool canSyncCameraTransformImmediately() const;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

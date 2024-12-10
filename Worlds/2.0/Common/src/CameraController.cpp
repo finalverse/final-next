@@ -6,9 +6,9 @@
 #include "OgreCamera.h"
 #include "OgreWindow.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     CameraController::CameraController( GraphicsSystem *graphicsSystem, bool useSceneNode ) :
         mUseSceneNode( useSceneNode ),
@@ -126,4 +126,4 @@ namespace Demo
         mCameraYaw += float( -arg.motion.xrel ) / width;
         mCameraPitch += float( -arg.motion.yrel ) / height;
     }
-}  // namespace Demo
+}  // namespace Final

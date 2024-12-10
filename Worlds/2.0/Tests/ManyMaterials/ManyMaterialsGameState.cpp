@@ -25,7 +25,7 @@
 #include "OgreTextureGpu.h"
 #include "OgreTextureGpuManager.h"
 
-using namespace Demo;
+using namespace Final;
 
 ManyMaterialsGameState::ManyMaterialsGameState( const Ogre::String &helpDescription ) :
     TutorialGameState( helpDescription ),

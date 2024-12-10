@@ -1,6 +1,6 @@
 
-#ifndef Demo_AtmosphereGameState_H_
-#define Demo_AtmosphereGameState_H_
+#ifndef Final_AtmosphereGameState_H_
+#define Final_AtmosphereGameState_H_
 
 #include "OgrePrerequisites.h"
 
@@ -8,7 +8,7 @@
 
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class AtmosphereGameState : public TutorialGameState
     {
@@ -36,6 +36,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

@@ -39,12 +39,12 @@ THE SOFTWARE.
 
 #include "System/MainEntryPoints.h"
 
-using namespace Demo;
+using namespace Final;
 
 @implementation HelloViewController
 {
-    Demo::GameState *_graphicsGameState;
-    Demo::GraphicsSystem *_graphicsSystem;
+    Final::GameState *_graphicsGameState;
+    Final::GraphicsSystem *_graphicsSystem;
     CADisplayLink *_timer;
 
     double _timeSinceLast;

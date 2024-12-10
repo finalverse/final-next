@@ -10,9 +10,9 @@
 
 #include "OgreRoot.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     UnalignedBufferUavCopyGameState::UnalignedBufferUavCopyGameState(
         const Ogre::String &helpDescription ) :
@@ -107,4 +107,4 @@ namespace Demo
     }
     //-----------------------------------------------------------------------------------
     void UnalignedBufferUavCopyGameState::destroyScene() {}
-}  // namespace Demo
+}  // namespace Final

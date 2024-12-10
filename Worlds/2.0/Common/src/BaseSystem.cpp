@@ -2,7 +2,7 @@
 #include "BaseSystem.h"
 #include "GameState.h"
 
-namespace Demo
+namespace Final
 {
     BaseSystem::BaseSystem( GameState *gameState ) : mCurrentGameState( gameState ) {}
     //-----------------------------------------------------------------------------------
@@ -30,4 +30,4 @@ namespace Demo
     }
     //-----------------------------------------------------------------------------------
     void BaseSystem::finishFrame() { mCurrentGameState->finishFrame(); }
-}  // namespace Demo
+}  // namespace Final

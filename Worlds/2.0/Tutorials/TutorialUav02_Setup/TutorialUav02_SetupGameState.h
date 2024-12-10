@@ -1,12 +1,12 @@
 
-#ifndef _Demo_TutorialUav02_SetupGameState_H_
-#define _Demo_TutorialUav02_SetupGameState_H_
+#ifndef _Final_TutorialUav02_SetupGameState_H_
+#define _Final_TutorialUav02_SetupGameState_H_
 
 #include "OgreMesh2.h"
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class TutorialUav02_SetupGameState : public TutorialGameState
     {
@@ -15,6 +15,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

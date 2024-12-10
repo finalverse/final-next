@@ -26,7 +26,7 @@ INT WINAPI WinMainApp( HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR strCmdLin
 int mainApp( int argc, const char *argv[] )
 #endif
 {
-    return Demo::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
+    return Final::MainEntryPoints::mainAppSingleThreaded( DEMO_MAIN_ENTRY_PARAMS );
 }
 
 #define USE_OPEN_VR
@@ -41,7 +41,7 @@ extern const bool c_useRDM;
 // causing glitches in NVIDIA GPUs in Linux, see https://github.com/OGRECave/ogre-next/issues/53
 const bool c_useRDM = true;
 
-namespace Demo
+namespace Final
 {
     Ogre::CompositorWorkspace *Tutorial_OpenVRGraphicsSystem::setupCompositor()
     {
@@ -272,4 +272,4 @@ namespace Demo
     }
 
     const char *MainEntryPoints::getWindowTitle() { return "OpenVR Sample"; }
-}  // namespace Demo
+}  // namespace Final

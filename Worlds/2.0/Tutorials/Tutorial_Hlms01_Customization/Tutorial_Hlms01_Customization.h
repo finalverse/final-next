@@ -1,6 +1,6 @@
 
-#ifndef Demo_Tutorial_Hlms01_Customization_H
-#define Demo_Tutorial_Hlms01_Customization_H
+#ifndef Final_Tutorial_Hlms01_Customization_H
+#define Final_Tutorial_Hlms01_Customization_H
 
 #include "GraphicsSystem.h"
 
@@ -18,7 +18,7 @@
 #include "OgreHlmsManager.h"
 #include "OgreHlmsPbs.h"
 
-namespace Demo
+namespace Final
 {
     class Hlms01CustomizationGraphicsSystem final : public GraphicsSystem
     {
@@ -164,6 +164,6 @@ namespace Demo
 
         Ogre::MyHlmsListener *getMyHlmsListener() { return mMyHlmsListener; }
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

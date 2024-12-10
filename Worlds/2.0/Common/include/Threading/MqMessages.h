@@ -5,7 +5,7 @@
 #include <assert.h>
 #include <vector>
 
-namespace Demo
+namespace Final
 {
     namespace Mq
     {
@@ -23,6 +23,6 @@ namespace Demo
             NUM_MESSAGE_IDS
         };
     }
-}  // namespace Demo
+}  // namespace Final
 
 #endif

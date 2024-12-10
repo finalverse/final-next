@@ -23,9 +23,9 @@
 #include "MainEntryPointHelper.h"
 #include "System/MainEntryPoints.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     class MyGraphicsSystem final : public GraphicsSystem
     {
@@ -61,7 +61,7 @@ namespace Demo
     const char *MainEntryPoints::getWindowTitle() { return "Tutorial 01: Initialization"; }
 #    endif
 #endif
-}  // namespace Demo
+}  // namespace Final
 
 #if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID
 #    if OGRE_PLATFORM == OGRE_PLATFORM_WIN32

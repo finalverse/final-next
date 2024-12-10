@@ -1,12 +1,12 @@
 
-#ifndef _Demo_BillboardTestGameState_H_
-#define _Demo_BillboardTestGameState_H_
+#ifndef _Final_BillboardTestGameState_H_
+#define _Final_BillboardTestGameState_H_
 
 #include "OgrePrerequisites.h"
 
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     class BillboardTestGameState : public TutorialGameState
     {
@@ -15,6 +15,6 @@ namespace Demo
 
         void createScene01() override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

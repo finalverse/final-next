@@ -11,7 +11,7 @@
 
 #include "OgreCamera.h"
 
-namespace Demo
+namespace Final
 {
     const Ogre::Matrix4 PROJECTIONCLIPSPACE2DTOIMAGESPACE_PERSPECTIVE( 0.5, 0, 0, 0.5, 0, -0.5, 0, 0.5,
                                                                        0, 0, 1, 0, 0, 0, 0, 1 );
@@ -211,4 +211,4 @@ namespace Demo
         psParams->setNamedConstant( "stride", (float)pixelStride );
         psParams->setNamedConstant( "maxSteps", (float)maxSteps );
     }
-}  // namespace Demo
+}  // namespace Final

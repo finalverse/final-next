@@ -26,8 +26,8 @@ THE SOFTWARE.
 -----------------------------------------------------------------------------
 */
 
-#ifndef _Demo_StaticPluginLoader_H_
-#define _Demo_StaticPluginLoader_H_
+#ifndef _Final_StaticPluginLoader_H_
+#define _Final_StaticPluginLoader_H_
 
 #include "OgreBuildSettings.h"
 
@@ -59,7 +59,7 @@ namespace Ogre
     class Root;
 }  // namespace Ogre
 
-namespace Demo
+namespace Final
 {
     /// Utility class to load plugins statically
     class StaticPluginLoader
@@ -94,6 +94,6 @@ namespace Demo
 
         void install( Ogre::Root *root );
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

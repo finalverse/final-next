@@ -1,11 +1,11 @@
 
-#ifndef Demo_ParticleFX2GameState_H
-#define Demo_ParticleFX2GameState_H
+#ifndef Final_ParticleFX2GameState_H
+#define Final_ParticleFX2GameState_H
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
-namespace Demo
+namespace Final
 {
     namespace BlendingMethod
     {
@@ -40,6 +40,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

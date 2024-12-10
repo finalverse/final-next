@@ -1,13 +1,13 @@
 
-#ifndef _Demo_GraphicsGameState_H_
-#define _Demo_GraphicsGameState_H_
+#ifndef _Final_GraphicsGameState_H_
+#define _Final_GraphicsGameState_H_
 
 #include "OgrePrerequisites.h"
 #include "TutorialGameState.h"
 
 #include "OgreVector3.h"
 
-namespace Demo
+namespace Final
 {
     class GraphicsSystem;
 
@@ -33,6 +33,6 @@ namespace Demo
 
         void keyReleased( const SDL_KeyboardEvent &arg ) override;
     };
-}  // namespace Demo
+}  // namespace Final
 
 #endif

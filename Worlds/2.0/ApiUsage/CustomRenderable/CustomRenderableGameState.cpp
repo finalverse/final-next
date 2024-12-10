@@ -8,7 +8,7 @@
 
 #include "OgreCamera.h"
 
-namespace Demo
+namespace Final
 {
     CustomRenderableGameState::CustomRenderableGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription ),
@@ -46,4 +46,4 @@ namespace Demo
         OGRE_DELETE mMyCustomRenderable;
         mMyCustomRenderable = 0;
     }
-}  // namespace Demo
+}  // namespace Final

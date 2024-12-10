@@ -18,9 +18,9 @@
 
 #include "OgreCamera.h"
 
-using namespace Demo;
+using namespace Final;
 
-namespace Demo
+namespace Final
 {
     TutorialUav01_SetupGameState::TutorialUav01_SetupGameState( const Ogre::String &helpDescription ) :
         TutorialGameState( helpDescription )
@@ -52,4 +52,4 @@ namespace Demo
 
         TutorialGameState::createScene01();
     }
-}  // namespace Demo
+}  // namespace Final
