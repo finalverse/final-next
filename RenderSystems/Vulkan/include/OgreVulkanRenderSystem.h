@@ -145,6 +145,10 @@ namespace Ogre
         void flushRootLayout();
         void flushRootLayoutCS();
 
+        void createVkResources();
+        void destroyVkResources0();
+        void destroyVkResources1();
+
     public:
         VulkanRenderSystem( const NameValuePairList *options );
         ~VulkanRenderSystem() override;
@@ -152,6 +156,8 @@ namespace Ogre
         void shutdown() override;
         const FastArray<VulkanPhysicalDevice> &getVulkanPhysicalDevices() const;
         const VulkanPhysicalDevice &getActiveVulkanPhysicalDevice() const { return mActiveDevice; }
+        bool validateDevice( bool forceDeviceElection = false ) override;
+        void handleDeviceLost();
 
         const String &getName() const override;
         const String &getFriendlyName() const override;
@@ -219,6 +225,9 @@ namespace Ogre
         void _setTexBuffer( size_t slot, VkBufferView bufferView );
         void _setTexBufferCS( size_t slot, VkBufferView bufferView );
         void _setReadOnlyBuffer( size_t slot, const VkDescriptorBufferInfo &bufferInfo );
+#ifdef OGRE_VK_WORKAROUND_ADRENO_6xx_READONLY_IS_TBUFFER
+        void _setReadOnlyBuffer( size_t slot, VkBufferView bufferView );
+#endif
 
         void _setCurrentDeviceFromTexture( TextureGpu *texture ) override;
         void _setTexture( size_t unit, TextureGpu *texPtr, bool bDepthReadOnly ) override;

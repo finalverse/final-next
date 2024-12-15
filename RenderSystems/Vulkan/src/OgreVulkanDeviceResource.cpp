@@ -42,7 +42,7 @@ namespace Ogre
     }
 
     // ------------------------------------------------------------------------
-    static VulkanDeviceResourceManager *gs_VulkanDeviceResourceManager = NULL;
+    static VulkanDeviceResourceManager *gs_VulkanDeviceResourceManager = nullptr;
 
     VulkanDeviceResourceManager *VulkanDeviceResourceManager::get()
     {
@@ -51,7 +51,7 @@ namespace Ogre
 
     VulkanDeviceResourceManager::VulkanDeviceResourceManager()
     {
-        assert( gs_VulkanDeviceResourceManager == NULL );
+        assert( gs_VulkanDeviceResourceManager == nullptr );
         gs_VulkanDeviceResourceManager = this;
     }
 
@@ -59,17 +59,21 @@ namespace Ogre
     {
         assert( mResources.empty() );
         assert( gs_VulkanDeviceResourceManager == this );
-        gs_VulkanDeviceResourceManager = NULL;
+        gs_VulkanDeviceResourceManager = nullptr;
     }
 
     void VulkanDeviceResourceManager::notifyResourceCreated( VulkanDeviceResource *deviceResource )
     {
+        std::lock_guard<std::recursive_mutex> guard( mResourcesMutex );
+
         assert( std::find( mResources.begin(), mResources.end(), deviceResource ) == mResources.end() );
         mResources.push_back( deviceResource );
     }
 
     void VulkanDeviceResourceManager::notifyResourceDestroyed( VulkanDeviceResource *deviceResource )
     {
+        std::lock_guard<std::recursive_mutex> guard( mResourcesMutex );
+
         vector<VulkanDeviceResource *>::type::iterator it =
             std::find( mResources.begin(), mResources.end(), deviceResource );
         assert( it != mResources.end() );
@@ -83,35 +87,30 @@ namespace Ogre
 
     void VulkanDeviceResourceManager::notifyDeviceLost()
     {
+        std::lock_guard<std::recursive_mutex> guard( mResourcesMutex );
+
         assert( mResourcesCopy.empty() );  // reentrancy is not expected nor supported
         mResourcesCopy = mResources;
 
-        vector<VulkanDeviceResource *>::type::iterator it = mResourcesCopy.begin();
-        vector<VulkanDeviceResource *>::type::iterator en = mResourcesCopy.end();
-        while( it != en )
-        {
-            if( VulkanDeviceResource *deviceResource = *it )
-                deviceResource->notifyDeviceLost();
-            ++it;
-        }
+        for( VulkanDeviceResource *deviceResource : mResourcesCopy )
+            if( deviceResource != nullptr )
+                deviceResource->notifyDeviceLost();  // notifyResourceDestroyed() can be called inside
+
         mResourcesCopy.clear();
     }
 
     void VulkanDeviceResourceManager::notifyDeviceRestored()
     {
+        std::lock_guard<std::recursive_mutex> guard( mResourcesMutex );
+
         assert( mResourcesCopy.empty() );  // reentrancy is not expected nor supported
         mResourcesCopy = mResources;
+
         for( unsigned pass = 0; pass < 2; ++pass )
-        {
-            vector<VulkanDeviceResource *>::type::iterator it = mResourcesCopy.begin();
-            vector<VulkanDeviceResource *>::type::iterator en = mResourcesCopy.end();
-            while( it != en )
-            {
-                if( VulkanDeviceResource *deviceResource = *it )
-                    deviceResource->notifyDeviceRestored( pass );
-                ++it;
-            }
-        }
+            for( VulkanDeviceResource *deviceResource : mResourcesCopy )
+                if( deviceResource != nullptr )
+                    deviceResource->notifyDeviceRestored( pass );  // subresources could be created
+
         mResourcesCopy.clear();
     }
 
